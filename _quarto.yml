@@ -7,7 +7,7 @@ website:
   page-navigation: true
   page-footer: 
     center: 
-      - text: "This website was created for DPH systematic review."
+      - text: "DPH systematic review - 2023"
   sidebar:
     logo: "images/dph_logo.png"
     logo-alt: "Dept. of Public Health Logo"
