@@ -1,0 +1,57 @@
+---
+title: "DPH Systematic Review"
+---
+
+# Welcome!
+
+This website documents our systematic review of the literature on comprehensive medication management (CMM) interventions and hypertensive patients in the United States. The website will hopefully serve as a destination point for all documents describing our work. A systematic review has a few moving parts, and rather than creating numerous folders, we hope that gathering all materials in one place for viewing and manipulation will help streamline the process.
+
+There is nothing proprietary about the research we are conducting, but it is a private repository in GitHub. Therefore, only those with valid links will be able to access it. Use the menu links at the top of the page to navigate to relevant parts of the project. As time moves forward, we may additinal pages to document other aspects of the project such as data extraction and analysis.
+
+
+# Project Summary
+
+## Overview
+
+This systematic review will investigate the effects of pharmacist-led CMM interventions on health-related outcomes (i.e., therapeutic, safety, and humanistic) and on economic outcomes in the United States. Historically, the role of pharmacists has centered on dispensing services. However, the collaborative drug therapy management (CDTM) framework has expanded pharmacists' role, making them integral to patient-centered care. Coupled with existing health system challenges such as the misuse, underuse, and overuse of medication, stakeholders, see CMM as critical to providing positive clinical, economic, and humanistic outcomes.
+
+## Tools
+
+To aid our systematic review we will rely on a couple of tools to sift through citations, and full-text.
+
+1.  **Zotero** - A citation and reference manager.
+
+![](images/zotero_logo.png){fig-align="center" width=10%}
+
+2.  **SysRev** - A textual data mining tool
+
+![](images/SysRev_logo.png){fig-align="center" width=10%}
+
+
+(Please refer to the *protocol* and *training* pages for additional information on these tools).
+
+
+
+### SysRev Links
+
+We are using the **SysRev Platform** for our screening and data extraction needs. Below are links to those projects on the SysRev Platform[^1]:
+
+1.	[Stage 1 - Title and Abstract Screening](https://sysrev.com/u/9715/p/121625)
+2.	[Stage 2 - Full-text Screening](https://sysrev.com/u/9715/p/121626)
+3.	[Stage 3 - Data extraction](https://sysrev.com/u/9715/p/121627)
+
+## Collaborators and Affiliations
+
+1.	Seyram A. Butame - Los Angeles County, Department of Public Health
+2.	Noel Barragan - Los Angeles County, Department of Public Health
+3.	Tony Kuo - Los Angeles County, Department of Public Health 
+4.	University of Southern California (USC)
+
+
+## Contaction Information
+
+- Email:<sbutame@ph.lacounty.gov>
+ 
+
+
+[^1]: These projects are set to private and so, unless you have received an invitation, you will not be able to access. However, if you have questions please feel free to contact me.

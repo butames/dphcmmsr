@@ -1,0 +1,131 @@
+---
+title: "Screener"
+---
+
+# Project Introduction
+
+![](images/iconscout_direction.svg){fig-align="right" width=10%}
+
+We are conducting a systematic review of the literature on pharmacist-led comprehensive medication management (CMM) interventions in populations living with hypertension. After searching several databases, we have compiled a list of citations or references that could theoretically be included in our analysis. We need to screen these citations to ensure that they have a basic level information, before we go through the challenge of extracting data for analysis. This guide will provide some of the basic information to carry out this screening process. Furthermore, it will provide information on using the SysRev Platform, a web-based tool to help us work together to mine data from our corpus of citations/references and eventually the full-text.
+
+
+## Supporting Documents
+
+![](images/iconscout_documents.svg){fig-align="left" width=20%}
+
+
+1.    Systematic Review Protocol - This document represents the protocol for our systematic review. It details our study objectives, methods, and rationale for our approach. 
+
+2.    Inclusion Criteria - While working to screen a corpus it can be handy to have a list of inclusion criteria to work with. This document is meant to assist with the process.
+
+3.    Screening Cheat Sheet - This is an accompanying document that hopefully answers some of the more subtle questions you may have during screening. The training presentation and the protocol document also capture much of this information.
+
+
+
+## Background on SysRev
+
+![](images/SysRev_logo.png){fig-align="center" width=25%}
+
+The SysRev Platform (developed by Insillica, LLC.). The platform allows our team to work collaboratively (with the assistance of natural language processing and machine learning) to extract data and information for our systematic review. To begin using SysRev, you will need to create an account (if you have already created one, please skip to step 2).
+
+![](images/sysrev_signup.svg){fig-align="center" width=75%}
+
+<h3 style="text-align: center;"> [SysRev Signup](https://sysrev.com/register) - <https://sysrev.com/register></h3>
+
+-   Click on the Sign up for SysRev button (alternatively copy and paste the above link into your browser).
+-   Use a preferred email address and password (There is an option to sign up with a Google.com (i.e., Gmail) account if that works better for you in terms of keeping track of username and password information).
+-   Once you sign-up you will have to **verify** your email address to ensure that your account is activated (SysRev is free to use, so no worries about making any payments).
+
+## Launching a Project
+
+![](images/iconscout_launch.svg){fig-align="right" width=10%}
+
+You are able to start your own projects within the Platform. However, to get started with this project, I have to invite you to projects that I have created. Take the following steps to ensure you are invited to the correct projects so we may proceed.
+
+1.    Once you complete your sign-up, inform me and I can invite you to the projects. That process won’t take long. You will get an email from me (Email: <sbutame@ph.lacounty.gov>) with a link to a SysRev project. 
+
+2.    That project will be titled — *Training-Stage1-TitlesAbstract* (Or something similar). This guide contains images that are meant to serve as a guide to what you will interract with as you use the SysRev Platorm. There may be some variation in the names of the spefic projects that you encounter, and as we move forward with screening and eventually data extraction.
+
+3.    When you receive the email from me, sign-in to your SysRev account, and then click on the link (within the email). If you have any trouble with this portion, please let me know.
+
+## SysRev Layout
+
+![](images/iconscout_webdesigning.svg){fig-align="left" width=10%}
+
+Once you’ve accepted the project invitation, you will see all the projects you have accepted listed to the left of the landing page, under **Your Projects**.
+
+![](images/sysrev_layout.svg){fig-align="center" width=75%}
+
+To begin, select the relevant project. On clicking the specific project, you will have access to a similar project menu shown below. This menu gives you access to five items:
+
+1.    **Overview** Page -- A project summary, summary statistics and summary information on the project.
+
+2.    **Articles** Page -- A listing of the data (or articles/citations) that have been uploaded to the project.
+
+3.    **Data** Page -- A summary page on the project data.
+
+4.    **Users** Page -- Information about project collaborators and colleagues.
+
+5.    **Analytics** Page -- Indepth statistics on the project and progress of collaborators (only accessible by the administrator).
+
+6.    **Review** Page -- Information on what remains to be done for the project (A blank page means nothing left to do).
+
+![](images/sysrev_projectmenu.svg){fig-align="center" width=100%}
+
+### Overview Page
+
+The **Overview** page gives a short explanation of the project, research question and the criteria we are using for screening or extracting data.
+
+![SysRev - Project Overview page Part I](images/sysrev_overviewa.svg){fig-align="center" width=75%}
+
+This page also displays a series of boxes, to provide summary on the data you and your collaborators will extract from citations/references.
+
+-   The Review Status box will show how far along you have come in terms of citations or articles reviewed, whether you chose to include or exclude them etc. 
+-   The Project Document box contains PDF copies of the study protocol and a separate list of the **Inclusion/Exclusion** criteria. Review these to help with your work.
+-   The *Prediction Histogram* box will present information on your progress. As I mentioned earlier, the SysRev Platform employs machine learning and natural language processing in the background as you work attempting to predict your coding patterns and that of the project team.
+-   Finally, the *Important Terms* box, also employs the machine learning functions to provide some summary information on the citations and references we are screening. 
+
+Once you begin screening citations, this page may look someting similar to the below, populated with data interpreted by the platform.
+
+![SysRev Project Overview page Part II (Featured project Wb literature review - Stage 3 Data extraction](images/sysrev_overviewb.svg){fig-align="center" width=75%}
+
+### Articles Page
+
+The **Articles** page provides a list of the citations/references uploaded into the project. There are several ways to load the citation corpus into SysRev. At present you don't need to worry about this process. When you are ready to begin screeing, you will find all the necessary data listed in this section. 
+
+![SysRev Project Articles page](images/sysrev_articles.svg){fig-align="center" width=75%}
+
+### Data Page
+
+The Data tab will provide a summary of those citations/references and the changes you and your fellow reviewers have made to each in terms of coding (I will explain further).
+
+### Analysis Page
+
+The Analytics tab is closed off to you. Just note that it provides based on your coding and screen activity (It is not pertinent to our screening activity). 
+
+### Review Page
+
+
+# Title and Abstract Screening
+
+The objective at this point is to give a first pass of all the references we have gathered to ensure that they have a basic level of information necessary for the systematic review. This systematic review has two important steps before we begin extracting data. The first is Title and Abstract Screening.The objective is to efficiently scan the titles and the abstracts (if available) of the citations and to mark them as Include or Exclude based on the criteria detailed in the protocol. 
+
+<iframe width="85%" height="565" frameborder="0"
+  src="https://observablehq.com/embed/05ce756c1f9ad887?cells=titabs"></iframe>
+
+## Getting Started
+
+1.    Log-in to your account
+2.    You will see projects listed in your profile by name (if I have invited you to a project).
+3.    Click on the project (e.g., Stage1-TitlesAbstracts) to access the landing page described above.
+4.    To begin, click on **Review**.
+
+On the left, you will see a listing of labels, and on the right you will see the citations including: Title, Journal, Publication year, Authors, and Abstract (if available). 
+
+# Full-text Screening
+
+## Getting Started
+
+<iframe width="85%" height="693" frameborder="0"
+  src="https://observablehq.com/embed/05ce756c1f9ad887?cells=fulltxt"></iframe>
+  

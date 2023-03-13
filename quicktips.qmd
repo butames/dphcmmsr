@@ -1,0 +1,148 @@
+---
+title: "Screening Cheat Sheet"
+---
+
+![](images/lightbulb.svg){fig-align="center" width=25%}
+
+# Remember This
+
+When you start screening, the first question you ask yourself is:
+
+**Does this citation/reference (or the full-text) include the information I am looking for and does this citation/reference report enough information that I am able to save the data.**
+
+If the answer is **Yes** or the answer is **Unsure** then you want to Include, using the procedures outlined in the guide document.
+
+However if the answer is a resounding **No**, then you exclude the citation/reference (or the full-text). 
+
+---
+
+# Tips - Title and Abstract Screening
+
+## The CMM Intervention
+
+A CMM intervention is complex, as its correct application (according to the American College of Clinical Pharmacy (ACCP)) has to check off several components. It is complexity that may not be captured in a title or the abstract, so be careful as you screen. If you do not find immediate evidence of CMM and you are unsure, **Include** the citation/reference. Our full-text screening will hopefully clarify the issue. While the Title/Abstract may not mention or include CMM, our database filters may have pulled the citation, based on factors such as keywords, the full-text, tables, figures, and even the reference section. 
+
+Also note that because of the novelty of CMM, there may be other terms that cover or characterize the same type of intervention. I have included a list of terms that may be used to descirbe a CMM or CMM-like intervention. So as you are screening keep an eye out for such terms (further down in this document is to help define CMM interventions for the full-text screening).
+
+-   medication review
+-   comprehensive medication review
+-   comprehensive drug therapy
+-   collaborative drug therapy management
+-   collaborative medication management
+-   comprehensive therapy management
+-   medication therapy management/MTM
+-   drug review
+-   pharmacist-led
+
+
+
+## Patient Population
+
+Our systematic review has a complex study population. We are interested in CMM interventions and its link with people being treated for hypertension (or at some risk for hypertension). As you are screening be on the look out for mentions of **patient populations with hypertension**, or a patient population at **risk for hypertension**. Similar to the issue of the intervention, the Title/Abstract may not mention hypertension directly. Look for other indicators that may suggest this, such as the measurement of blood pressure. 
+
+Additionally, because our focus is on the intervention, there may be studies that have providers as a target and not patients. Consequently, you may come across citations/references that are focused on pharmacists (and other providers) and how they have dealt with CMM (think of a work-place survey as an example).
+
+When you encounter such a citation/reference consider inclusion only if there is reference to a patient population with hypertension (or with a noted risk for hypertension). In such unique circumstances, we want to include citations/ references where  the providers who are part of a CMM intervention and they have encounters with people living with hypertension.
+
+## Study Outcomes
+
+Because CMM is a pharmacist driven intervention, we are going to index citations/references in four outcome areas. These include three health-related outcomes (i.e., therapeutic, safety, and humanistic) and economic outcomes. This is a theorized multidimensional approach that will give us a more extensive understanding effect of CMM.
+
+-   **Therapeutic outcomes** -- These are clinical events related to the intervention, such as hospital/ emergency department(ED)/urgent care/primary care visitation, length of stay, Body mass index data, blood pressure data, medication dosage data, and appropriate medication use data. 
+
+-   **Safety outcomes** -- Pharmacological studies often account for rare, severe or adverse reactions to medications. Because CMM interventions evaluate drug use, and interactions this outcome category includes data on, adverse drug events, adverse drug reactions, medication errors, hospitalizations related to medication event, prescription appropriateness, and any other drug safety concerns.
+
+Therapeutic and safety outcomes are also often categorized as **clinical outcomes**. Therefore take into account that language as you screen citations/references for inclusion.
+
+-   **Humanistic outcomes** -- This covers three areas including symptom status, the functional status, and quality of life (QOL). Examples include patient satisfaction, provider satisfaction, medication adherence, patient knowledge, provider knowledge, and patients’ health related quality of life (HRQOL). 
+
+Humanistic outcomes are also sometimes categorized as **“*patient-oriented*” outcomes**. Therefore take into accoun that lagunage as you screen citations/references for inclusion.
+
+-   **Economic outcomes** -- These include direct costs and indirect costs and may point to pharmacoeconomic measures, reductions in Health Care Costs (HCCs), or costs assocated with utilization, costs associated with hospitalizations, emergency and/or clinic visit costs, and/or avoided drug costs.
+
+
+
+## Study Types
+
+In the published literature there are many types of study designs that are used for original research. We want study types that capture an experimental component, with data collection and analysis. **Experimental studies** and **Observational studies** tend to fit this broad definition. 
+
+We designed the database search filters to pull out citations/references that reflect these two main categories of study design. However, filters are not perfect and other types of studies, or study designs may get through. As you are reading Titles/Abstracts, look to exclude citations/ references that document the following types of publications: 
+
+1.    Letters to editors/ rejoinders to previously published manuscripts.
+2.    Edited book chapters/ Full and complete books/ book reviews
+3.    Theses/ dissertations
+4.    Presentations
+5.    Conference papers/ lectures
+6.    News articles/ popular magazine articles
+7.    Statutes/ legal briefs
+8.    Formal reports or agency documents
+9.    Systematic reviews/ meta-analyses
+10.   Bibliographies
+11.   Registered clinical trials/ protocol (without data)
+
+Be aware that this is not an exhaustive list.
+
+
+## Language - English
+
+We want citations/ references published in English. This will likely be a minimal issue because our search filters are meant to pull citations/references relevant to the United States. However, for those citations that are not in English. This is just a limitation of our systematic review as we do not have the resources to appropriately translate non-English language material.
+
+
+
+## Study Setting - United States
+
+We want studies focused on the United States of America (US). So, as you are screening citations/ references, check to see if the studies are set in the US. Alternatively some studies take place across multiple countries or different regions. To include the citation/reference in our systematic review, at least one of those settings should be the US.
+
+Just a word of caution, you may have a scenario where the authors or the journal are not in the US (or there is some other indication that the researchers are not based in the US). For example, a research institution in the UK or the EU, got a hold of patient data and have published it. That is fine so long as the data is sourced from the US or a subpopulation of the data is from the US. 
+
+## Study Year - 2010 Onwards
+
+We want studies published from **2010 onwards**. Anecdotal evidence suggests that CMM interventions began taking off in the last decade.
+
+This date cutoff is based on *date of publication*. There may be citations/references which describe data collection taking place much earlier (e.g., from the aughts or earlier). To reduce confusion, and to streamline things we want to include published material from the previous decade and this one.
+
+# Tips - Full-text screening
+
+When screening full-text, my recommendation is to scan through the **methods section** of the manuscript (as well as the the Introduction/Background). The methods section will describe what researchers did in greater detail. Consequently, it will capture pertinent details on, the *patient population*, *study setting (i.e., country)*, *study type/design*, the  *intervention and its components*, and other relevant factors such as publication dates.
+
+Note that if the full-text is not in English, you **Exclude** the manuscript.
+
+## CMM Major Components
+
+Because CMM has several parts as you review the methods section of the full-text, you have to look at the described intervention to see whether it captures the major components of a CMM intervention. To help you as you are going through this I have provided this handy checklist below.
+
+-   [ ] A healthcare team (with or led by a pharmacist) acts collaboratively to provide direct care to patients.
+
+-   [ ] There is the development of a patient-centered care plan \[action plan\] which receives patient approval, agreement, and active participation.
+
+-   [ ] Assessing patient clinical status for all medications and unique health problems.
+
+-   [ ] The patient is offered a clinically appropriate follow-up to assess progress toward treatment goals.
+
+
+
+## Study Types
+
+As you scan the methods section looking for whether to include a citation, you will likely come across several study design types. Below is a list of the major ones you may come across, and some variations. Remember, we want to include the citations/references or full-text that reflect these designs.
+
+### Experimental Studies
+
+> *the investigator determines through a controlled process the exposure for each individual (clinical trial) or community (community trial), and then tracks the individuals or communities over time to detect the effects of the exposure.*
+
+-   Clinical Trials
+    -   Randomized Controlled Trial (RCT) - This is typically seen as the gold standard
+-   Community Trials
+
+### Observational Studies
+
+For these types of studies, the researcher
+
+> *observes the exposure and disease status of each study participant [or group].*
+
+-   Cohort studies
+-   Case-control studies
+-   Cross-sectional studies
+  
+Observational studies may sometimes be described as **quasi-experimental studies**, where data limitations do not allow for a true experiment, but their structure allow for some analytics that would be applicable in experimental methods like an RCT. 
+
+In your full-text screening, you may encounter a manuscript that details a survey of pharmacists, who are involved in a CMM-like intervention. This would be a manuscript to include. 

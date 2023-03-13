@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "CMM Systematic Review"
+  page-navigation: true
+  page-footer: 
+    center: 
+      - text: "This website was created for DPH systematic review."
+  sidebar:
+    logo: "images/dph_logo.png"
+    logo-alt: "Dept. of Public Health Logo"
+    style: "docked"
+    search: true
+    contents:
+      - section: "Home"
+        contents: 
+        - index.qmd
+      - section: "Protocol Documents"
+        contents:
+        - protocol.qmd
+        - appendices.qmd
+      - section: "Training Materials"
+        contents:
+        - screener.qmd
+        - quicktips.qmd
+
+format:
+  html:
+    theme: litera
+    css: styles.css
+    toc: true
+    csl: plosone.csl
+    bibliography: https://api.citedrive.com/bib/a53bb48b-a29a-404b-b767-30e552611f02/references.bib?x=eyJpZCI6ICJhNTNiYjQ4Yi1hMjlhLTQwNGItYjc2Ny0zMGU1NTI2MTFmMDIiLCAidXNlciI6ICIxOTAyIiwgInNpZ25hdHVyZSI6ICIzNmRhMmFlNzgzZjlmNjQ4NDc1MmYxYjViMWU4ODUwZWRiZTM1MDVjNjQ2ZGM4NjNmYWRjMzNmOGU4ZDc5NGUzIn0=/bibliography.bib
+

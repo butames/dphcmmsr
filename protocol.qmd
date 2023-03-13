@@ -1,0 +1,156 @@
+---
+title: "Protocol (Working Document)"
+---
+
+# Title
+
+Pharmacist-led comprehensive medication management (CMM): A systematic review of patient outcomes, patient experiences, and provider experiences."
+
+## Review Background
+
+The role of pharmacists in the United States for patient care has changed in recent years. In California, for example, amendments to the  Business and Professions Code have expanded pharmacists' scope of practice beyond the traditional roles of dispensing drugs and basic counseling.[@CA_2010, @CASB_493] Consequently, pharmacists have become more involved in providing evidence-based practices that better meet the needs of their patient or client populations. Previous systematic reviews have addressed the benefits of pharmacist-led interventions, showing their impact on patients living with chronic diseases such as asthma and diabetes.[@De_Barra2018-fp, @Nkansah2010-qs] Moreover, previous systematic reviews have demonstrated the value of such interventions in ensuring unmet healthcare needs. Such studies establish the importance of pharmacist-led interventions to patients. Coupled with reviews that focus on reductions in economic costs to patients and health systems,[@Tripicchio2020-mv, @Cheng2018-zx, @Houle2014-bx] pharmacist-led interventions are a critical boon to public health infrastructure and performance.
+
+The scale-up of pharmacist-led interventions in the United States stems from the collaborative drug therapy management (CDTM) framework, which integrates interprofessional, collaborative practice models to provide affordable, high-quality, and safe patient-centered care.[@Carmichael1997-uc, @American_College_of_Clinical_Pharmacy2015-qa] The Medicare Modernization Act (MMA) of 2003 and the Patient Protection and Affordability Act (ACA) of 2010 codified medication therapy management (MTM) as an ideal standard of care within the CDTM framework.8 Wherein pharmacists are more engaged with their patient population and carry out reviews of drug profiles to ensure their safety and efficacy for patients. MTM is a standard of care that aims to ensure that patients in a health system receive the best medication therapy to achieve any pharmacotherapeutic goals.[@Bluml2005-rt, @American_College_of_Clinical_Pharmacy2015-qa]
+
+Operating in this environment, stakeholders have developed comprehensive medication management (CMM), a process of care that defines the delivery of medication management.[@Carmichael1997-uc, @ACCP2010-tr, @CMMTeam2018-tr] CMM as a process is distinct from the MTM standard because it requires an assessment of patients' medications for appropriateness, effectiveness, and safety. The CMM process calls for the development of patient-centered care plans which capture patients' clinical status and a care plan they understand and agree to follow. It is a process that stipulates clinically appropriate follow-up evaluations with patients to assess progress toward stated treatment goals. Furthermore, CMM requires formulating a healthcare team to serve patient needs and collaboration between the team’s members. Thus, pharmacists must work with other providers, such as physicians and nurses, to deliver on the three additional components of the CMM process.[@ACCP2010-tr, @CMMTeam2018-tr]
+
+Health systems encounter challenges regarding misuse, underuse, and overuse of medications, and such challenges continue to drive the uptake of CMM processes. This situation has led to a growing body of research highlighting CMM’s positive effects. Several studies have established CMM’s positive impact on patient outcomes regarding chronic diseases, such as diabetes, hypertension, and cardiovascular disease. For example, several studies highlight reductions in hemoglobin A1c (HbA1c) levels, a critical factor in assessing the health of people with diabetes.[@McAdam-Marx2015-zz, @Brummel2013-it, @Rothman2005-my] Behavioral composite scores in health areas such as smoking cessation, meeting HbA1c,  low-density lipoprotein (LDL), and blood pressure goals have shown improvements in health systems implementing CMM. Similarly, other studies have focused on establishing CMM contributions to containing long-term costs from the perspective of both patients and payers into the health system. 
+
+### Review Aim
+
+To the best of our knowledge, no current systematic reviews or meta-analyses have broadly encompassed the existing evidence on CMM-based interventions and their impact on patients living with hypertension in the United States. Furthermore, the research recommends a multidimensional evaluation of interventions rather than focusing on therapeutic outcomes, as that will provide a more extensive understanding of the effect on health care. Therefore, this team’s systematic review will investigate the effects of pharmacist-led CMM interventions on health-related outcomes (i.e., therapeutic, safety, and humanistic) and on economic outcomes in the United States. Our review aim is built around the PICO framework (see Figure 1).[@Huang2006-xt]
+
+![An illustration of systematic review constructs based on the PICO framework.](images/fig01pico2.png){fig-align="center" width=65%}
+
+### Description of Condition
+
+This review covers one health condition, high blood pressure or essential hypertension. The patient population receiving CMM services varies in terms of healthcare setting (e.g., ambulatory care, hospital inpatient, or community care) and demographic characteristics (e.g., gender, income level, or age). Furthermore, the population of providers offering CMM services also varies in terms of setting (e.g., community or hospital pharmacy) and provider characteristics (e.g., clinical pharmacists or community pharmacists).  
+
+### Description of the Intervention
+
+Pharmacist-led direct patient interventions serve as a mechanism to close the gap between base practice and usual care. Medication Therapy Management (MTM) is the language adopted by the Centers for Medicare and Medicaid Services (CMS) and incorporated in the 2003 Medicare Part D statutes to offer a baseline standard of care and to contextualize the dynamic relationship between pharmacists and prescribers. MTM aims to ensure patients receive the best medication therapy to achieve their pharmacological goals. CMM emerged from the language of MTM. It is a care process that goes beyond the basics outlined via MTM. CMM ensures that patients receive a comprehensive review of their medication, and the review establishes the medication regimen to be safe, effective, and appropriate. CMM contains four critical components. Firstly, a healthcare team acts collaboratively to provide direct care to patients. Secondly, there is the development of a patient-centered care plan which receives patient approval, agreement, and active participation. The CMM demands assessing patient clinical status for all medications and unique health problems. Finally, the patient is offered a clinically appropriate follow-up to assess progress toward treatment goals (see Figure 2).
+
+
+### How a CMM Intervention Might Work
+
+The novelty of pharmacist-led CMM interventions means there will be some variation in implementation. The standard of care defined by MTM may also confuse how interventions are documented in the literature. For example, MTM, as defined in Medicare Part D, may be implemented without dispensing any medication or product. It does not require an assessment of a patient's clinical status and a review of all medications. MTM also does not demand the action of a collaborative team in the process. Researchers may also not use the language of CMM when characterizing or documenting an intervention. Similarly, the needs of patient populations, a health system's infrastructure, and other factors may produce interventions that are a hodge-podge of CMM components. Therefore, this review will contain the added step of certifying described interventions as following the CMM process defined above (see Figure 2).[@CMMTeam2018-tr]
+
+![An illustration of the CMM process as denoted by ACCP et al. (2018)](images/fig02cmmproc.png){fig-align="center" width=85%}
+
+### Why This Review is Important
+
+Historically, the role of pharmacists has centered on dispensing services. However, the CDTM framework has expanded pharmacists' role, making them integral to patient-centered care. Coupled with existing health system challenges such as the misuse, underuse, and overuse of medication, stakeholders, see CMM as critical to providing positive clinical, economic, and humanistic outcomes. Previous systematic reviews had covered the issue of pharmacist-led interventions, such as de Barra et al. (2018)[@De_Barra2018-fp] and its predecessor Nkansah et al. (2010).[@Nkansah2010-qs] Both reviews highlighted the value of such interventions when it came to several chronic conditions affecting the patient health outcomes. Other systematic reviews focused on pharmacist-led interventions and have centered on providing evidence for the positive effects on payers, such as private sector insurers and governments. However, there needs to be more studies cataloging and summarizing CMM specifically. In our search, we came across one CMM-specific narrative review. However, the study team was concerned with developing a framework to conceptualize how CMM implementation can financially benefit health plans and primary care delivery systems.7 To the best of our knowledge, this review will highlight the extent to which CMM is used in caring for patients with hypertension. In addition to the therapeutic, safety and humanistic outcomes experienced by patients, this review will also examine the economic outcomes of CMM use for patients with hypertension.
+
+## Review Methods
+
+### Criteria for Including Studies
+
+To be included in the systematic review, retrieved manuscripts, and reported studies must meet the following criteria:
+
+1.    The reviewed manuscript must document evidence of CMM intervention. We acknowledge that researchers and health systems deploying interventions in target populations may use terminology different from CMM processes as defined by the ACCP. However, there should be discernible evidence of distinct intervention components that point to a CMM-style intervention.
+
+2.    Manuscripts must have a target population of people living with hypertension or at risk for hypertension or pharmacists providing direct care to populations with hypertension.
+
+3.    Manuscripts must report on patient-related therapeutic, safety, or humanistic outcomes or manuscripts must cover economic outcome measures related to the implementation of CMM.
+
+4.    Manuscripts must be published in English (or a serviceable English translation must be available).
+
+5.    Manuscripts must detail the following types of studies, randomized controlled trials, clinical trials, observational studies (such as cohort or case studies), and sensitivity studies. We will exclude the following types of citations or manuscripts, systematic reviews, meta-analyses, books, book chapters, bibliographies, dissertations, lectures, conference abstracts, book reviews, news articles, theses, study protocols (without study data), registered clinical trials (without study data), and clinical drug trials. 
+
+6. Manuscript must detail studies conducted in the United States (i.e., all 50 states and territories).
+
+7. Manuscripts must be published from 2010 onwards.
+
+### Search Methods for Identifying Studies
+
+#### Primary Databases
+
+We will conduct systematic searches in the following electronic health-related databases through December 16, 2022. Databases to be searched include:
+
+-   The National Library of Medicine’s (NLM) bibliographic database, MEDLINE. This database indexes journal articles and other published material in the life sciences with a concentration on biomedicine. Using PubMed as the search interface, we will employ board searches of Medical Subject Headings (MeSH) (2010 to 2022).
+
+-   The Cochrane Library is a collection of databases focused on several healthcare specialties. Relevant databases include the Cochrane Database of Systematic Reviews (CDSR), Cochrane Central Register of Controlled Trials (CENTRAL), Cochrane Methodology Register (CMR), Database of Abstracts of Reviews of Effects (DARE), Health Technology Assessment Database (HTA), and NHS Economic Evaluation Database (EED). We will employ the Wiley Online Library interface.
+
+-   The Cumulative Index to Nursing and Allied Health Literature (CINAHL) indexes journal articles and manuscripts published in English-language and selected other languages, concentrating on nursing, allied health, biomedicine, and healthcare. We will employ the EBSCO interface.
+
+-   Embase is a biomedical database employing Emtree to create deep biomedical indexing or published research. We will use Ovid as the search interface. 
+
+
+#### Secondary Databases and Grey Literature
+
+In addition to the primary databases listed above, we will hand search the reference lists of the systematic reviews, meta-analyses, and review articles to identify references that our electronic database search missed.
+
+### Reference Management and Screening
+
+#### Reference Management
+
+Study selection will begin with eliminating duplicate references found in the various databases. The review team will use Zotero to curate and catalog extracted references to form our analytic corpus.[@CHNM-zt]. Zotero, offers a powerful de-duplication feature, allowing the team to identify and consolidate duplicates from across multiple databases. After consolidating duplicates, the remaining references will be moved on to the initial step of title and abstract screening.
+
+#### Screening and Data Extraction Platform
+
+The team will rely on the Sysrev Platform, to conduct the Title/Abstract screening, Full-text screening and Data extraction steps of this systematic review.[@Insilica2023-aw, @Bozada2021-no, @Van_der_Mierden2019-gx] Sysrev accessed via their website (<https://www.sysrev.com>), is a web-based tool that combines systematic evidence review (SER) methods with other data workflows, including generalized data curation, education, and workflows involving collaboration between humans and between humans and machines for evaluation of digital documents or corpuses. Sysrev provides a mechanism for conducting all the required systematic mapping objectives of this protocol, including title and abstract screening, full-text screening and data extraction and preliminary analysis. The platform incorporates some machine learning and natural language processing algorithms to sort articles according to inputted inclusion or exclusion criteria. The Sysrev Platform also helps to reduce the effects of selection bias during evaluation of materials for inclusion. The members of the coding team are assigned citations/ references to review at random, while using the Platform. Members of the coding team are also blinded from labels and coding results produced by their colleagues during the process.  Finally, there is evidence of the Sysrev Platform's robustness as a tool for data extraction given it has been used in peer-reviewed publications to screen manuscripts, facilitate study selection and extract relevant data.[@Van_der_Mierden2019-gx, @Rana2021-hd, @Mahalingasivam2021-wb]
+
+#### Reviewer Training and concordance)
+
+Once the corpus of citations and references is complete (i.e., extracted from select databases), we will begin screening for inclusion using the Sysrev Platform. The process begins with training the screening and data extraction team. The team consists of six individuals. After detailed review of the study protocol and using subsample of citations taken at random from the corpus (i.e., at least 10% or the corpus), the team members will code the articles for inclusion. The Sysrev Platform, will assign citations/references to the project team, at random ensuring that each citation/reference is independently coded twice. The Sysrev Platform also provides an assessment of concordance between the reviewers based on coding patterns. The degree of agreement between reviewers provided as a percentage, will The training will also serve as means to get the team members familiar with the Sysrev Platform.
+
+
+#### Title and Abstract Screening
+
+Once training is complete, we will then move to screening of the corpus using the criteria for including references (see Section 2.1 above). Using random sampling, the corpus will be divided into three chunks with each pair of coders tackling one chunk. Withing Sysrev, our chosen platform, there will have to be agreement between a coding pair to move a citation to the next stage of the process (i.e., Full-text screening). We will resolve conflicts based on discussion, with the final decision and approval left up to the project leads (i.e., SAB and NB). On completion, coding results will be exported as a spreadsheet, for review.
+
+<iframe width="85%" height="565" frameborder="0"
+  src="https://observablehq.com/embed/05ce756c1f9ad887?cells=titabs"></iframe>
+  
+  
+#### Full-Text Screening
+
+With a narrower corpus produced from initial screening, the team will review full-text manuscripts using the criteria for inclusion defined above (Section 2.1). Again using a random sample approach, this new corpus will be divided into three chunks with each pair of coders tackling one chunk, via Sysrev. As with title and abstract screening, there will have to be agreement between a coding pair to move the citation (and manuscript) to the next stage of the process (i.e., Data extraction). As with the previous stage, we willr eovle conflicts based on discussion between coders, with final decision and approval left up to the project leads. Manuscripts approved for data-extraction are then moved to the next stage in the systematic review.
+
+<iframe width="85%" height="693" frameborder="0"
+  src="https://observablehq.com/embed/05ce756c1f9ad887?cells=fulltxt"></iframe>
+  
+### Data Extraction
+
+We will index included studies according to the health-related (i.e., therapeutic, safety, humanistic) and economic outcome areas. The review team will then extract data from the included studies. We will use an extraction form developed *a priori* and based on the generalized data extraction form developed by The Cochrane Collaboration and published in the *Cochrane Handbook for Systematic Reviews of Interventions*.[@Li2022-ch, @cochrane2023-tp] The form was developed and reviewed by a project lead (i.e., SAB) and is minimize variability. As with title/abstract and full-text screening, the team will use the Sysrev Platform. Data extraction will include the following categories:
+
+-   Study Characteristics (e.g., study design, setting, disease state, the hierarchy of outcomes)
+Intervention Characteristics (e.g., CMM components/constructs).
+
+-   Patient characteristics (e.g., age, gender, type of health insurance).
+
+-   Pharmacist (or health provider team) characteristics (e.g., community pharmacist, ambulatory pharmacist, provider qualifications).
+
+-   Study outcomes (i.e., the therapeutic, safety, humanistic and economic outcomes resulting from CMM implementation are ranked from favorable to not favorable).
+
+#### Hierarchy of Study Outcomes (Quality Assessment)
+
+We anticipate that studies will report health-related and economic outcomes. To summarize results systematically, the data extraction team will use the following categories (based on the approach adopted by Chilsom-Burn and colleagues):
+
+1.    Favorable -- Study outcomes with a p-value less than 0.05, indicating statistically significant positive changes due to the implementation of CMM.
+
+2.    Not Favorable -- Study outcomes with a p-value less than 0.05, indicating statistically significant negative changes due to the implementation of CMM.
+
+3.    Mixed -- Study outcomes are positive for one or more of the reported study outcomes but negative for one or more of the other reported study outcomes.
+
+4.    No effect -- Study outcomes demonstrate no statistically significant changes in either direction (indicated by a p-value of 0.05). 
+
+5.   Unclear -- The nature of the study outcomes is unclear, given the data and information provided in the manuscript.
+
+With the novelty of CMM interventions and the lack of a systematic summary of existing studies, we propose creating a hierarchy of outcomes based on the hierarchy developed by the Agency for Health Research and Quality (AHRQ).
+
+1.    Level 1 -- Clinical, quality of life outcomes (e.g., morbidity, mortality, adverse events, deaths prevented, intervention net benefits).
+
+2.   Level 2 -- Surrogate outcomes or intermediate outcomes (e.g., laboratory results, blood pressure measurements).
+
+3.    Level 3 -- Other measurable variables (e.g., knowledge of medication, disease status, or intervention).
+
+4.    Level 4 -- Other relevant variables (e.g., patient satisfaction, provider experiences).
+
+
+### Data Synthesis and Analysis
+
+Following data extraction, we will use Stata statistical software, version 14, to report summary statistics for all the studies we include in our systematic review. We will group studies by outcome area (i.e., therapeutic, safety, humanistic, and economic outcomes). Where appropriate, we will present summary statistics. Where the selected studies report results in multiple outcome areas, we will include the study data in the analysis of each relevant area. For instance, if a study reports blood pressure measures and adverse events prevented per dollar spent on CMM intervention, the study will be reported in both the therapeutic and economic analyses portions of this systematic review. Finally, we will calculate Pearson’s coefficient to evaluate the interrater reliability of the reviewer and data extraction teams.
+
+
+
