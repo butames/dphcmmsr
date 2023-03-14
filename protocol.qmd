@@ -35,7 +35,7 @@ Pharmacist-led direct patient interventions serve as a mechanism to close the ga
 
 The novelty of pharmacist-led CMM interventions means there will be some variation in implementation. The standard of care defined by MTM may also confuse how interventions are documented in the literature. For example, MTM, as defined in Medicare Part D, may be implemented without dispensing any medication or product. It does not require an assessment of a patient's clinical status and a review of all medications. MTM also does not demand the action of a collaborative team in the process. Researchers may also not use the language of CMM when characterizing or documenting an intervention. Similarly, the needs of patient populations, a health system's infrastructure, and other factors may produce interventions that are a hodge-podge of CMM components. Therefore, this review will contain the added step of certifying described interventions as following the CMM process defined above (see Figure 2).[@CMMTeam2018-tr]
 
-![An illustration of the CMM process as denoted by ACCP et al. (2018)](images/fig02cmmproc.png){fig-align="center" width=85%}
+![An illustration of the CMM process as denoted by ACCP et al. (2018)](images/fig02cmmproc.svg){fig-align="center" width=85%}
 
 ### Why This Review is Important
 
