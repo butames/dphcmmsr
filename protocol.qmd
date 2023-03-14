@@ -99,7 +99,7 @@ Once the corpus of citations and references is complete (i.e., extracted from se
 
 Once training is complete, we will then move to screening of the corpus using the criteria for including references (see Section 2.1 above). Using random sampling, the corpus will be divided into three chunks with each pair of coders tackling one chunk. Withing Sysrev, our chosen platform, there will have to be agreement between a coding pair to move a citation to the next stage of the process (i.e., Full-text screening). We will resolve conflicts based on discussion, with the final decision and approval left up to the project leads (i.e., SAB and NB). On completion, coding results will be exported as a spreadsheet, for review.
 
-<iframe width="85%" height="565" frameborder="0"
+<iframe width="100%" height="563" frameborder="0"
   src="https://observablehq.com/embed/05ce756c1f9ad887?cells=titabs"></iframe>
   
   
@@ -107,7 +107,7 @@ Once training is complete, we will then move to screening of the corpus using th
 
 With a narrower corpus produced from initial screening, the team will review full-text manuscripts using the criteria for inclusion defined above (Section 2.1). Again using a random sample approach, this new corpus will be divided into three chunks with each pair of coders tackling one chunk, via Sysrev. As with title and abstract screening, there will have to be agreement between a coding pair to move the citation (and manuscript) to the next stage of the process (i.e., Data extraction). As with the previous stage, we willr eovle conflicts based on discussion between coders, with final decision and approval left up to the project leads. Manuscripts approved for data-extraction are then moved to the next stage in the systematic review.
 
-<iframe width="85%" height="693" frameborder="0"
+<iframe width="100%" height="691" frameborder="0"
   src="https://observablehq.com/embed/05ce756c1f9ad887?cells=fulltxt"></iframe>
   
 ### Data Extraction

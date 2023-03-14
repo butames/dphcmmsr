@@ -121,11 +121,10 @@ If you want some additional information on the SysRev Platform for your own work
 
 The objective at this point is to give a first pass of all the references we have gathered to ensure that they have a basic level of information necessary for the systematic review. This systematic review has two important steps before we begin extracting data. The first is Title and Abstract Screening.The objective is to efficiently scan the titles and the abstracts (if available) of the citations and to mark them as Include or Exclude based on the criteria detailed in the protocol. 
 
-<p align="center"><iframe width="85%" height="565" frameborder="0"
-  src="https://observablehq.com/embed/05ce756c1f9ad887?cells=titabs"></iframe></p>
-  
+<iframe width="100%" height="563" frameborder="0"
+  src="https://observablehq.com/embed/05ce756c1f9ad887?cells=titabs"></iframe>
 
-We have already had an introduction to S
+We have already had an introduction to SysRev, so it is time to dive on in.
 
 ## Getting Started
 
@@ -142,6 +141,6 @@ On the left, you will see a listing of labels, and on the right you will see the
 
 ## Getting Started
 
-<p align="center"><iframe width="85%" height="693" frameborder="0"
-  src="https://observablehq.com/embed/05ce756c1f9ad887?cells=fulltxt"></iframe></p>
+<iframe width="100%" height="691" frameborder="0"
+  src="https://observablehq.com/embed/05ce756c1f9ad887?cells=fulltxt"></iframe>
   

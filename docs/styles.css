@@ -71,3 +71,11 @@ figure {
   margin: 0.5em;
   padding: 0.5em;
 }
+
+div {
+  text-align:center;
+  width:100%;
+}
+div > iframe{
+  width: 200px;
+}
