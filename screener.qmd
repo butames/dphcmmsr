@@ -151,9 +151,67 @@ To begin, read and review citation/reference information on the right and then m
 
 -   Excluded![](images/sysrev_no.png?display=inline-block) 
 
-This question required.
+Note that this is a REQUIRED question.
 
-If you decide to include (i.e., Yes),  move to the Exclusion tab. Then from the drop down menu select a Not Applicable (i.e., first item). 
+If you decide to Include (i.e., YES),  move to the Exclude tab. And from the drop down menu select a Not Applicable (i.e., the first item in the dropdown menu). 
+
+If you decide to Exclude (i.e., NO), move to the Exclude tab. And from the drop down menu select your reason (or reasons for exclusion). Note that you are able to provide multiple reasons for exclusion, so select all that apply.
+
+Providing a response in the Exclude tab is REQUIRED.
+
+
+Once these two steps are complete, you click on Save.![](images/sysrev_save.png?display=inline-block) 
+
+And just like that you are done with screening a citation/reference. The SysRev Platform will immediately deliver the next citation/reference in the system to be screened. Repeat the steps outlined above, deciding whether to Include or Exclude the citation.
+
+When you first come across a citation/reference in Sysrev, you  have the option to **Skip**.![](images/sysrev_skip.png?display=inline-block)
+
+
+When screening, at times you may be unsure and desire to to maul over the material before you make a decision. The Skip option gives you that breathing room.
+
+The Skip, will place the citation/reference you are looking at the back of your list, and present you with the next on your list. You will eventually have to screen that citation/ reference.
+
+### Screening Checks
+
+There are features within SysRev to ensure that you follow the steps outlined above. If you decide to include a citation/reference (i.e., you select YES), your choice will produce a green plus sign in the upper left corner of the Include tab.![](images/sysrev_plus.png?display=inline-block)
+
+If you decide to Exclude a citation/reference (i.e., you select NO), your choice will produce an orange munus sign in the upper left corner of the Include tab.![](images/sysrev_minus.png?display=inline-block)
+
+Similarly, when you select **Not Applicable** in the Exclude tab, a green plus appears in the upper left of that tab. And when you select a reason explaining why chose to Exclude, a small orange minus sign appears in the same spot.
+
+Consequently, if you are going to Include a citation you should see two green plus signs. 
+
+![A decision to Include should show two green plus signs](images/sysrev_include.svg){fig-align="center" width=75%}
+
+However, if your responses are mismatched, the entire section will take on a reddish color, to alert you to a problem. 
+
+
+![A reddish color indicates you have entered incorrect values.](images/sysrev_mismatch.svg){fig-align="center" width=75%}
+
+![A decision to Exclude should show two minus signs and the tabs should be highlighted a dull red](images/sysrev_include.svg){fig-align="center" width=75%}
+
+As you screen, you want one of the two scenarios shown below. Either there should be two green plus signs, indicating a decision to Include, or two orange minus signs, indicating a decision to Exclude.
+
+::: {layout-ncol=2 fig-align="center"}
+
+![Include](images/sysrev_includea.svg){#Include}
+
+![Exclucde](images/sysrev_exclude.svg){#Exclude}
+:::
+
+### Questions and Notes
+
+As you are screening Titles/Abstracts, if you have any questions, please feel free to reach out to me (Email: <sbutame@ph.lacounty.gov>). Alternatively you may note any questions you have in the SysRev Platform. Under each citation/ reference in the Review page there is a space to enter notes. 
+
+![An option to ask questions or give notes](images/sysrev_questions.svg){fig-align="center" width=75%}
+
+### One Last Note
+
+If after reviewing the title and abstract of a citation, and you remain uncertain, default to **Including** the citation. The second pass at screening (i.e., Full-Text Screening) will help to resolve uncertainties given you will have access to critical context from the full-text.
+
+
+
+<br></br>
 
 
 # Full-text Screening
