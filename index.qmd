@@ -15,6 +15,14 @@ There is nothing proprietary about the research we are conducting, but it is a p
 
 This systematic review will investigate the effects of pharmacist-led CMM interventions on health-related outcomes (i.e., therapeutic, safety, and humanistic) and on economic outcomes in the United States. Historically, the role of pharmacists has centered on dispensing services. However, the collaborative drug therapy management (CDTM) framework has expanded pharmacists' role, making them integral to patient-centered care. Coupled with existing health system challenges such as the misuse, underuse, and overuse of medication, stakeholders, see CMM as critical to providing positive clinical, economic, and humanistic outcomes.
 
+## Review Registration
+
+This project is registered with **PROSPERO — International prospective register of systematic reviews**(National Institute for Health Research<https://www.crd.york.ac.uk/prospero>)
+
+-   Registration ID: **CRD42023392681**
+-   Registration Date: January 29, 2023
+
+
 ## Tools
 
 To aid our systematic review we will rely on a couple of tools to sift through citations, and full-text.

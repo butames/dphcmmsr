@@ -1,8 +1,8 @@
 ---
-title: "Screener"
+title: "A Guide to Screening Citations and Documents"
 ---
 
-# Project Introduction
+# Introduction
 
 ![](images/iconscout_direction.svg){fig-align="right" width=10%}
 
@@ -22,9 +22,9 @@ We are conducting a systematic review of the literature on pharmacist-led compre
 
 
 
-## Background on SysRev
+## The SysRev Platform
 
-![](images/SysRev_logo.png){fig-align="center" width=25%}
+![](images/SysRev_logo.png){fig-align="center" width=20%}
 
 The SysRev Platform (developed by Insillica, LLC.). The platform allows our team to work collaboratively (with the assistance of natural language processing and machine learning) to extract data and information for our systematic review. To begin using SysRev, you will need to create an account (if you have already created one, please skip to step 2).
 
@@ -97,28 +97,44 @@ The **Articles** page provides a list of the citations/references uploaded into 
 
 ### Data Page
 
-The Data tab will provide a summary of those citations/references and the changes you and your fellow reviewers have made to each in terms of coding (I will explain further).
+The Data page will provide a summary of those citations/references and the changes you and your fellow reviewers have made to each in terms of coding (I will explain further). As you can see from the image below it is similar to the **Articles Page** but is optimized for manipulating labels and exporting data. Only the project administrators have access to the data here.
 
-### Analysis Page
+![SysRev Data page](images/sysrev_data.svg){fig-align="center" width=75%}
 
-The Analytics tab is closed off to you. Just note that it provides based on your coding and screen activity (It is not pertinent to our screening activity). 
+### Analytics Page
+
+The Analytics page is closed off to you. Just note that it provides based on your coding and screen activity (It is not pertinent to our screening activity). As with the data page, only the project administrators have access to the data here.
+
+![SysRev Analytics page](images/sysrev_analytics.svg){fig-align="center" width=75%}
 
 ### Review Page
 
+As you are working through screening or reviewing the citations in the corpus, the Review page will indicate how many citations (manuscripts) are left to you. 
+
+### Additional Information
+
+If you want some additional information on the SysRev Platform for your own work, Insillica LLC, owners of SysRev provide some instructional videos. 
+
+<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLt4D0fZLWzSlVzzhZTeyOCJDyMoDHNEDK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
 
 # Title and Abstract Screening
 
 The objective at this point is to give a first pass of all the references we have gathered to ensure that they have a basic level of information necessary for the systematic review. This systematic review has two important steps before we begin extracting data. The first is Title and Abstract Screening.The objective is to efficiently scan the titles and the abstracts (if available) of the citations and to mark them as Include or Exclude based on the criteria detailed in the protocol. 
 
-<iframe width="85%" height="565" frameborder="0"
-  src="https://observablehq.com/embed/05ce756c1f9ad887?cells=titabs"></iframe>
+<p align="center"><iframe width="85%" height="565" frameborder="0"
+  src="https://observablehq.com/embed/05ce756c1f9ad887?cells=titabs"></iframe></p>
+  
+
+We have already had an introduction to S
 
 ## Getting Started
 
 1.    Log-in to your account
 2.    You will see projects listed in your profile by name (if I have invited you to a project).
-3.    Click on the project (e.g., Stage1-TitlesAbstracts) to access the landing page described above.
+3.    Click on the project (e.g., Stage1-TitlesAbstracts) to access the landing page described above (Prior to the start of screening, I would have shared with you a .
 4.    To begin, click on **Review**.
+
+
 
 On the left, you will see a listing of labels, and on the right you will see the citations including: Title, Journal, Publication year, Authors, and Abstract (if available). 
 
@@ -126,6 +142,6 @@ On the left, you will see a listing of labels, and on the right you will see the
 
 ## Getting Started
 
-<iframe width="85%" height="693" frameborder="0"
-  src="https://observablehq.com/embed/05ce756c1f9ad887?cells=fulltxt"></iframe>
+<p align="center"><iframe width="85%" height="693" frameborder="0"
+  src="https://observablehq.com/embed/05ce756c1f9ad887?cells=fulltxt"></iframe></p>
   
