@@ -1,22 +1,22 @@
 /* css styles */
-@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700);
 
 sidebar {
-  font-family:'Montserrat';
-  font-weight: 200;
+  font-family:'Quicksand';
+  font-weight: 300;
   font-size:11px;
 }
 
 body {
-  font-family: 'Montserrat';
-  font-weight: 300;
+  font-family: 'Quicksand';
+  font-weight: 400;
   font-size:13px;
   color:#000000;
 }
 
-h1 {
+h1 {Quicksand
   margin-top: 50;
-  font-family: 'Montserrat';
+  font-family: 'Quicksand';
   font-size: 1.3rem;
   margin-bottom: 50;
   font-weight: 600;
@@ -25,7 +25,7 @@ h1 {
 
 h2 {
   margin-top: 7px;
-  font-family: 'Montserrat';
+  font-family: 'Quicksand';
   font-size: 1rem;
   margin-bottom: 5px;
   font-weight: 500;
@@ -33,7 +33,7 @@ h2 {
 
 h3 {
   margin-top: 5px;
-  font-family: 'Montserrat';
+  font-family: 'Quicksand';
   font-size: 0.9rem;
   margin-bottom: 10px;
   font-weight: 400;
@@ -41,7 +41,7 @@ h3 {
 
 h4 {
   margin-top: 5px;
-  font-family: 'Montserrat';
+  font-family: 'Quicksand';
   font-size: 0.9rem;
   margin-bottom: 5px;
   font-weight:400;
@@ -49,7 +49,7 @@ h4 {
 
 h5 {
   margin-top: 5px;
-  font-family: 'Montserrat';
+  font-family: 'Quicksand';
   font-size: 0.9rem;
   margin-bottom: 5px;
   font-weight:400;
@@ -64,7 +64,7 @@ ul {
 figure {
   float: center;
   text-align: center;
-  font-family: 'Montserrat';
+  font-family: 'Quicksand';
   font-style: italic;
   font-size: 0.1rem;
   text-indent: 0;
