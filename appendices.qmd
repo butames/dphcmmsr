@@ -118,8 +118,6 @@ gt4
 ```
 
 
-
-
 ### EMBASE
 
 The below outlines the search strategy developed for the (EMBASE Database)(https://www.embase.com/landing?status=grey)
