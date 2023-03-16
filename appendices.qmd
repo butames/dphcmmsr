@@ -37,7 +37,7 @@ Full-text screening             :c5, after c4, 14d
 
 The following sections detail the databases search strategies implemented to extract citations and references in support of the systematic review.
 
-```{r, table3, warning=FALSE, message=FALSE, echo=FALSE}
+```{r, tablea2a, warning=FALSE, message=FALSE, echo=FALSE}
 
 t1 <- read_csv("data/a2table1.csv") %>%
   tibble()
@@ -47,7 +47,8 @@ gt1 <- kable(t1,
              col.names = c("Database Interface", "Database Name", "Date of Search", "Database Update", "Searchers")) %>%
   kable_styling(bootstrap_options = c("hover", "condensed", "responsive"),
                 full_width = F,
-                font_size = 10)
+                font_size = 10) %>%
+  footnote(symbol = c("Search strategies were developed between November 2023 and February 2023.", "The final database search was performed on March 20, 203."))
 
  gt1
 
@@ -58,7 +59,7 @@ gt1 <- kable(t1,
 
 The below outlines the search strategy developed for MEDLINE via [PubMED](https://www.PubMed.gov)
 
-```{r, table4, warning=FALSE, message=FALSE, echo=FALSE}
+```{r, tablea2b, warning=FALSE, message=FALSE, echo=FALSE}
 
 t2 <- read_csv("data/a2table2.csv") %>%
   tibble()
@@ -66,17 +67,62 @@ t2 <- read_csv("data/a2table2.csv") %>%
 gt2 <- kable(t2, 
              caption = "Table 02 - MEDLINE (PubMed) search strategy",
              col.names = c("Search Stages", "Search Terms")) %>%
-  footnote(number = c("Database: National Library of Medicine (US) - MEDLINE", "Date Range: 1946 – November 2022")) %>%
   kable_styling(bootstrap_options = c("hover", "condensed", "responsive"), 
                 font_size = 10,
-                full_width = F,
-                latex_options = c("repeat_header"))
+                full_width = F) %>%
+  footnote(symbol = c("Database: MEDLINE", "Interface: PubMED(NLM)", "Date Range: Jan. 2010 - Mar. 2023", "Pub Types: Peer reviewed", "Filter source: N/A" ))
 
 gt2
 ```
 
 
+### Cumulative Index to Nursing and Allied Health Literature (CINAHL)
+
+The below outlines the search strategy developed for the [CINAHL) Database](https://search.ebscohost.com)
+
+```{r, tablea2c, warning=FALSE, message=FALSE, echo=FALSE}
+
+t3 <- read_csv("data/a2table3.csv") %>%
+  tibble()
+
+gt3 <- kable(t3, 
+             caption = "Table 03 - Cumulative Index to Nursing and Allied Health Literature (CINAHL)",
+             col.names = c("Search Stages", "Search Terms")) %>%
+  kable_styling(bootstrap_options = c("hover", "condensed", "responsive"), 
+                font_size = 10,
+                full_width = F) %>%
+  footnote(symbol = c("Database: CINAHL", "Interface: Cochrane Website", "Date Range: Jan. 2010 - Mar. 2023", "Pub Types: Peer reviewed", "Filter source: N/A" ))
+
+gt3
+```
+
+
 ### Cochrane Library
+
+The below outlines the search strategy developed for the [Cochrane Library](https://www.PubMed.gov)
+
+```{r, tablea2d, warning=FALSE, message=FALSE, echo=FALSE}
+
+t4 <- read_csv("data/a2table4.csv") %>%
+  tibble()
+
+gt4 <- kable(t4, 
+             caption = "Table 03 - Cochrane Library search strategy",
+             col.names = c("Search Stages", "Search Terms")) %>%
+  kable_styling(bootstrap_options = c("hover", "condensed", "responsive"), 
+                font_size = 10,
+                full_width = F) %>%
+  footnote(symbol = c("Database: Cochrane Library (CDSR, CENTRAL, CMR, DARE, EED, HTA)", "Interface: Cochrane Website", "Date Range: Jan. 2010 - Mar. 2023", "Pub Types: Peer reviewed", "Filter source: N/A" ))
+
+gt4
+```
+
+
+
+
+### EMBASE
+
+The below outlines the search strategy developed for the (EMBASE Database)(https://www.embase.com/landing?status=grey)
 
 
 
