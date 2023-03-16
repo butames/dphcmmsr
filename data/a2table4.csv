@@ -1,0 +1,52 @@
+Stage,Terms
+#1,MeSH descriptor: [Pharmacists] explode all trees
+#2,MeSH descriptor: [Pharmacies] explode all trees
+#3,MeSH descriptor: [Community Pharmacy Services] explode all trees
+#4,MeSH descriptor: [Pharmaceutical Services] explode all trees
+#5,MeSH descriptor: [Pharmacies] explode all trees
+#6,"MeSH descriptor: [Pharmacy Service, Hospital] explode all trees"
+#7,MeSH descriptor: [Pharmacy and Therapeutics Committee] explode all trees
+#8,"(pharmacist* OR ""Pharmaceutical care""):ti,ab,kw"
+#9,"(""pharmacy based"" OR ""pharmacy-based"" OR ""pharmacist based"" OR ""pharmacist-based"" OR ""pharmacist managed"" OR ""pharmacy-managed"" OR ""pharmacy managed"" OR ""pharmacy run"" OR ""pharmacist run"" OR ""pharmacist initiated"" OR ""pharmacist-led""):ti,ab,kw"
+#10,#1 OR #2 OR #3 OR #4 OR #5 OR #6 OR #7 OR #8 OR #9
+#11,MeSH descriptor: [Essential Hypertension] explode all trees
+#12,MeSH descriptor: [Blood Pressure] explode all trees
+#13,MeSH descriptor: [Blood Pressure Determination] explode all trees
+#14,MeSH descriptor: [Hypertension] explode all trees
+#15,"(""blood pressure monitoring"" OR ""blood pressures""):ti,ab,kw"
+#16,#11 OR #12 OR #13 OR #14 OR #15
+#17,#10 AND #16
+#18,MeSH descriptor: [Medication Therapy Management] explode all trees
+#19,MeSH descriptor: [Patient Care Management] explode all trees
+#20,MeSH descriptor: [Medicare Part D] explode all trees
+#21,"(""comprehensive medication management""):ti,ab,kw"
+#22,"(""drug therapy management""):ti,ab,kw"
+#23,"(comprehensive AND ""drug program""):ti,ab,kw"
+#24,"(""collaborative medication management""):ti,ab,kw"
+#25,"(comprehensive AND ""drug regimen""):ti,ab,kw"
+#26,"(comprehensive AND ""treatment program""):ti,ab,kw"
+#27,"(comprehensive AND ""medication review""):ti,ab,kw"
+#28,"(collaborative AND ""medication review""):ti,ab,kw"
+#29,MeSH descriptor: [Standard of Care] explode all trees
+#30,"(""care standards""):ti,ab,kw"
+#31,"(""care standard""):ti,ab,kw"
+#32,"(""standards of care"" OR ""standard of care""):ti,ab,kw"
+#33,#18 OR #19 OR #20 OR #21 OR #22 OR #23 OR #24 OR #25 OR #26 OR #27 OR #28 OR #29 OR #30 OR #31 OR #32
+#34,MeSH descriptor: [Health Services Needs and Demand] explode all trees
+#35,MeSH descriptor: [Patient Compliance] explode all trees
+#36,MeSH descriptor: [Hospitals] explode all trees
+#37,MeSH descriptor: [Quality of Life] explode all trees
+#38,"(""medication related problems""):ti,ab,kw"
+#39,MeSH descriptor: [Drug-Related Side Effects and Adverse Reactions] explode all trees
+#40,"(""adverse event*"" AND medication*):ti,ab,kw"
+#41,"(""adverse event*"" AND treatment):ti,ab,kw"
+#42,"(economic* OR cost* OR ""cost effectiveness"" OR ""cost utility""):ti,ab,kw"
+#43,MeSH descriptor: [Cost-Benefit Analysis] explode all trees
+#44,MeSH descriptor: [Treatment Outcome] explode all trees
+#45,"MeSH descriptor: [Outcome Assessment, Health Care] explode all trees"
+#46,MeSH descriptor: [Relative Value Scales] explode all trees
+#47,MeSH descriptor: [Social Values] explode all trees
+#48,MeSH descriptor: [Costs and Cost Analysis] explode all trees
+#49,"MeSH descriptor: [Economics, Pharmaceutical] explode all trees"
+#50,#34 OR #35 OR #36 OR #37 OR #38 OR #39 OR #40 OR #41 OR #42 OR #43 OR #44 OR #45 OR #46 OR #47 OR #48 OR #49
+#51,#17 AND #33 AND #50
