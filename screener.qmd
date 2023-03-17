@@ -209,10 +209,7 @@ As you are screening Titles/Abstracts, if you have any questions, please feel fr
 
 If after reviewing the title and abstract of a citation, and you remain uncertain, default to **Including** the citation. The second pass at screening (i.e., Full-Text Screening) will help to resolve uncertainties given you will have access to critical context from the full-text.
 
-
-
 <br></br>
-
 
 # Full-text Screening
 

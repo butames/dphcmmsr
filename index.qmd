@@ -54,6 +54,10 @@ We are using the **SysRev Platform** for our screening and data extraction needs
 2.	Noel Barragan - Los Angeles County, Department of Public Health
 3.	Tony Kuo - Los Angeles County, Department of Public Health 
 4.	University of Southern California (USC)
+    - Alexander Cantres
+    - Evans Pope III
+    - Luis Larios
+    - Scott Weber
 
 
 
