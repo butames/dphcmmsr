@@ -107,7 +107,7 @@ t4 <- read_csv("data/a2table4.csv") %>%
   tibble()
 
 gt4 <- kable(t4, 
-             caption = "Table 03 - Cochrane Library search strategy",
+             caption = "Table 04x - Cochrane Library search strategy",
              col.names = c("Search Stages", "Search Terms")) %>%
   kable_styling(bootstrap_options = c("hover", "condensed", "responsive"), 
                 font_size = 10,
@@ -122,6 +122,22 @@ gt4
 
 The below outlines the search strategy developed for the (EMBASE Database)(https://www.embase.com/landing?status=grey)
 
+
+```{r, tablea2e, warning=FALSE, message=FALSE, echo=FALSE}
+
+t5 <- read_csv("data/a2table5.csv") %>%
+  tibble()
+
+gt5 <- kable(t5, 
+             caption = "Table 04 - EMBASE/EMTREE Search Strategy",
+             col.names = c("Search Stages", "Search Terms")) %>%
+  kable_styling(bootstrap_options = c("hover", "condensed", "responsive"), 
+                font_size = 10,
+                full_width = F) %>%
+  footnote(symbol = c("Database: EMBASE", "Interface: Elsevier", "Date Range: Jan. 2010 - Mar. 2023", "Pub Types: Peer reviewed", "Filter source: N/A" ))
+
+gt5
+```
 
 
 # Appendix 3

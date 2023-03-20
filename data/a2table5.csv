@@ -1,0 +1,8 @@
+Stage,Search Terms
+1,"(pharmacist:ab,ti OR pharmacy:ab,ti) AND shop:ab,ti OR 'online pharmacy':ab,ti OR 'hospital pharmacy':ab,ti OR 'drug therapy':ab,ti OR 'pharmaceutical care':ab,ti OR 'clinical pharmacy':ab,ti OR 'pharmacist led':ab,ti"
+2,"hypertension:ab,ti OR 'blood pressure':ab,ti OR 'essential hypertension':ab,ti OR 'blood pressure monitoring':ab,ti OR 'elevated blood pressure':ab,ti OR 'blood pressure measurement':ab,ti"
+3,"medication therapy management'/exp OR 'medication therapy management' OR 'medication therapy management':ti OR 'collaborative drug therapy':ab,ti OR 'drug therapy management':ab,ti OR 'drug program':ab,ti OR 'comprehensive medication management':ab,ti"
+4,"health service':ab,ti OR 'patient compliance':ab,ti OR hospitalization:ab,ti OR 'quality of life':ab,ti OR 'quality of life assessment':ab,ti OR 'adverse drug reaction':ab,ti OR 'medication compliance':ab,ti OR 'economic analysis':ab,ti OR 'cost utility analysis':ab,ti OR 'drug efficacy':ab,ti OR 'cost benefit analysis':ab,ti OR 'outcome assessment':ab,ti"
+5,united states'/exp OR 'united states'
+6,english:la
+7,[2010-2023]/py -- Year
