@@ -141,3 +141,53 @@ gt5
 
 
 # Appendix 3
+
+The below outlines the PRISMA 
+
+![PRISMA Chart of Systematic Review^[Haddaway et al. (2022)]](images/cmmsr_prisma.svg){fig-align="center" width=65%}
+
+## PRISMA Chart Details
+
+### Specific Database Results
+
+-   MEDLINE(PubMed), 108;
+-   CINAHL, 41;
+-   Cochrane Library, 68;
+-   EMBASE, 21
+
+
+### Exclusion Reasons
+
+-   Wrong intervention (not CMM), xxx;
+-   Wrong outcomes (see protocol), xxx;
+-   Wrong language (not English), xxx;
+-   Wrong country/setting (not USA), xxx;
+-   Wrong population (not Hypertensive/pharmacist), xxx;
+-   Wrong study type (see protocol), xxx;
+-   Wrong period (not after 2010), xxx;
+
+# Appendix 4 - Establishing Concordance
+
+```{r, message=FALSE,warning=FALSE, echo=FALSE}
+library("tidyverse")
+library("readr")
+
+```
+
+The total number of citations in our corpus is 217 (on March 18, 2023). After a removal of ducplicates. See PRISMA chart in Appendix.
+The *Cochrane Handbook for Systematic Reviews of Interventions* suggests that we use approximate 10 percent of the corpus to estimate inter-rater reliability (IRR). Therefore, we created a sequential ID variable for alll the citations in our corpus (N = 217). From there we used a random number generator to select 22 ($\approx$ 10%)
+
+Using a random integer genearator, based on the ID column/ variable in our corpus ([Random.org](https://www.random.org)), we generated 22 random numbers between 1 and 217. Where 
+
+```{r, warning=FALSE, message=FALSE, echo=FALSE}
+
+af1 <- read_csv("data/2023titlesabstracts.csv")
+
+af2 <- af1 %>%
+  filter(ID %in% c("95", "202", "124", "194", "184", "13", "2", "187", "153", "115", "86", "192", "33", "210", "196", "91", "111", "99", "1", "207", "103", "7")) %>%
+  select("ID", "Publication Year", "Author", "Title", "Url", "DOI", "Extra")
+
+write_csv(af2, "data/202303concordance.csv")
+
+```
+

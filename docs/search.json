@@ -145,5 +145,26 @@
     "title": "DPH Systematic Review",
     "section": "Review Registration",
     "text": "Review Registration\nThis project is registered with PROSPERO — International prospective register of systematic reviews(National Institute for Health Researchhttps://www.crd.york.ac.uk/prospero)\n\nRegistration ID: CRD42023392681\nRegistration Date: January 29, 2023"
+  },
+  {
+    "objectID": "concordance.html",
+    "href": "concordance.html",
+    "title": "concordance",
+    "section": "",
+    "text": "library(\"tidyverse\")\nlibrary(\"readr\")\n\nThe total number of citations in our corpus is 217. The Cochrane Handbook susggests that we use approximate 10 percent of the corpus to estimate inter-rater reliability (IRR). Therefore, we created a sequential ID variable for alll the citations in our corpus (N = 217). From there we used a random number generator to select 22 (\\(\\approx\\) 10%) Using a random integer genearator, based on the ID column/ variable in our corpus (Random.org), we generated 22 random numbers between 1 and 217. Where\n\naf1 <- read_csv(\"data/2023titlesabstracts.csv\")\n\naf2 <- af1 %>%\n  filter(ID %in% c(\"95\", \"202\", \"124\", \"194\", \"184\", \"13\", \"2\", \"187\", \"153\", \"115\", \"86\", \"192\", \"33\", \"210\", \"196\", \"91\", \"111\", \"99\", \"1\", \"207\", \"103\", \"7\")) %>%\n  select(\"ID\", \"Publication Year\", \"Author\", \"Title\", \"Url\", \"DOI\", \"Extra\")\n\nwrite_csv(af2, \"data/202303concordance.csv\")"
+  },
+  {
+    "objectID": "appendices.html#specific-database-results",
+    "href": "appendices.html#specific-database-results",
+    "title": "Appendices",
+    "section": "Specific Database Results",
+    "text": "Specific Database Results\n\nMEDLINE(PubMed), 108;\nCINAHL, 41;\nCochrane Library, 68;\nEMBASE, 21"
+  },
+  {
+    "objectID": "appendices.html#prisma-chart-details",
+    "href": "appendices.html#prisma-chart-details",
+    "title": "Appendices",
+    "section": "PRISMA Chart Details",
+    "text": "PRISMA Chart Details\n\nSpecific Database Results\n\nMEDLINE(PubMed), 108;\nCINAHL, 41;\nCochrane Library, 68;\nEMBASE, 21\n\n\n\nExclusion Reasons\n\nWrong intervention (not CMM), xxx;\nWrong outcomes (see protocol), xxx;\nWrong language (not English), xxx;\nWrong country/setting (not USA), xxx;\nWrong population (not Hypertensive/pharmacist), xxx;\nWrong study type (see protocol), xxx;\nWrong period (not after 2010), xxx;"
   }
 ]

@@ -1,0 +1,29 @@
+---
+title: "concordance"
+author: "Seyram A. Butame"
+editor: visual
+---
+
+```{r, message=FALSE,warning=FALSE}
+library("tidyverse")
+library("readr")
+
+```
+
+The total number of citations in our corpus is 217.
+The Cochrane Handbook susggests that we use approximate 10 percent of the corpus to estimate inter-rater reliability (IRR). Therefore, we created a sequential ID variable for alll the citations in our corpus (N = 217). From there we used a random number generator to select 22 ($\approx$ 10%)
+Using a random integer genearator, based on the ID column/ variable in our corpus ([Random.org](https://www.random.org)), we generated 22 random numbers between 1 and 217. Where 
+
+```{r, warning=FALSE, message=FALSE}
+
+af1 <- read_csv("data/2023titlesabstracts.csv")
+
+af2 <- af1 %>%
+  filter(ID %in% c("95", "202", "124", "194", "184", "13", "2", "187", "153", "115", "86", "192", "33", "210", "196", "91", "111", "99", "1", "207", "103", "7")) %>%
+  select("ID", "Publication Year", "Author", "Title", "Url", "DOI", "Extra")
+
+write_csv(af2, "data/202303concordance.csv")
+
+
+```
+

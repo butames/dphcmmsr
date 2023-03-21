@@ -67,6 +67,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -175,7 +176,15 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#embase" id="toc-embase" class="nav-link" data-scroll-target="#embase">EMBASE</a></li>
   </ul></li>
   </ul></li>
-  <li><a href="#appendix-3" id="toc-appendix-3" class="nav-link" data-scroll-target="#appendix-3">Appendix 3</a></li>
+  <li><a href="#appendix-3" id="toc-appendix-3" class="nav-link" data-scroll-target="#appendix-3">Appendix 3</a>
+  <ul class="collapse">
+  <li><a href="#prisma-chart-details" id="toc-prisma-chart-details" class="nav-link" data-scroll-target="#prisma-chart-details">PRISMA Chart Details</a>
+  <ul class="collapse">
+  <li><a href="#specific-database-results" id="toc-specific-database-results" class="nav-link" data-scroll-target="#specific-database-results">Specific Database Results</a></li>
+  <li><a href="#exclusion-reasons" id="toc-exclusion-reasons" class="nav-link" data-scroll-target="#exclusion-reasons">Exclusion Reasons</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#appendix-4---establishing-concordance" id="toc-appendix-4---establishing-concordance" class="nav-link" data-scroll-target="#appendix-4---establishing-concordance">Appendix 4 - Establishing Concordance</a></li>
   </ul>
 </nav>
     </div>
@@ -760,11 +769,59 @@ Full-text screening             :c5, after c4, 14d
 </section>
 <section id="appendix-3" class="level1">
 <h1>Appendix 3</h1>
+<p>The below outlines the PRISMA</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/cmmsr_prisma.svg" class="img-fluid figure-img" style="width:65.0%"></p>
+<p></p><figcaption class="figure-caption">PRISMA Chart of Systematic Review<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></figcaption><p></p>
+</figure>
+</div>
+<section id="prisma-chart-details" class="level2">
+<h2 class="anchored" data-anchor-id="prisma-chart-details">PRISMA Chart Details</h2>
+<section id="specific-database-results" class="level3">
+<h3 class="anchored" data-anchor-id="specific-database-results">Specific Database Results</h3>
+<ul>
+<li>MEDLINE(PubMed), 108;</li>
+<li>CINAHL, 41;</li>
+<li>Cochrane Library, 68;</li>
+<li>EMBASE, 21</li>
+</ul>
+</section>
+<section id="exclusion-reasons" class="level3">
+<h3 class="anchored" data-anchor-id="exclusion-reasons">Exclusion Reasons</h3>
+<ul>
+<li>Wrong intervention (not CMM), xxx;</li>
+<li>Wrong outcomes (see protocol), xxx;</li>
+<li>Wrong language (not English), xxx;</li>
+<li>Wrong country/setting (not USA), xxx;</li>
+<li>Wrong population (not Hypertensive/pharmacist), xxx;</li>
+<li>Wrong study type (see protocol), xxx;</li>
+<li>Wrong period (not after 2010), xxx;</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="appendix-4---establishing-concordance" class="level1">
+<h1>Appendix 4 - Establishing Concordance</h1>
+<div class="cell">
+
+</div>
+<p>The total number of citations in our corpus is 217 (on March 18, 2023). After a removal of ducplicates. See PRISMA chart in Appendix. The <em>Cochrane Handbook for Systematic Reviews of Interventions</em> suggests that we use approximate 10 percent of the corpus to estimate inter-rater reliability (IRR). Therefore, we created a sequential ID variable for alll the citations in our corpus (N = 217). From there we used a random number generator to select 22 (<span class="math inline">\(\approx\)</span> 10%)</p>
+<p>Using a random integer genearator, based on the ID column/ variable in our corpus (<a href="https://www.random.org">Random.org</a>), we generated 22 random numbers between 1 and 217. Where</p>
+<div class="cell">
+
+</div>
 
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Haddaway et al.&nbsp;(2022)<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
