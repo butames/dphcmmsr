@@ -58,6 +58,7 @@ We are using the **SysRev Platform** for our screening and data extraction needs
     - Evans Pope III
     - Luis Larios
     - Scott Weber
+    - Devin Lee
 
 
 ## Contaction Information
