@@ -25,6 +25,7 @@ website:
         contents:
         - screener.qmd
         - quicktips.qmd
+        - training.qmd
 
 format:
   html:
