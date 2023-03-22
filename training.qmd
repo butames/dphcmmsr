@@ -9,34 +9,32 @@ We have a screening team of five graduate students. While having multiple screen
 
 ## Training I (March 14, 2023)
 
-<br>
 
 ### Introduction to systematic reviews and our protocol
-
-<br>
 
 
 ## Training II (March 21, 2023)
 
-<br>
+
 
 ### Document Screening and other steps
 
-<br>
 
 <a href="https://butames.github.io/dphtraining02" class="button-51" role="button">Training II - Screening</a>
 
-
----
 
 ## Image sources
 
 The images and slides used in the presentation are screenshots of relevant project components or taken from clipart website Iconscout. Where we use images from Iconscout, please see below for proper credits. 
 
 -   <a href="https://iconscout.com/lotties/singing-contract" target="_blank">Singing Contract Animated Illustration</a> by <a href="https://iconscout.com/contributors/nanoagency">nanoagency</a> on <a href="https://iconscout.com">IconScout</a>
+
 -   <a href="https://iconscout.com/icons/wish-list" target="_blank">Wish list Icon</a> by <a href="https://iconscout.com/contributors/aficons-studio" target="_blank">Aficons studio</a>
+
 -   <a href="https://iconscout.com/illustrations/bullseye" target="_blank">Bullseye Illustration</a> by <a href="https://iconscout.com/contributors/delesign" target="_blank">Delesign Graphics</a>
+
 -   <a href="https://iconscout.com/illustrations/online-learning-concept" target="_blank">Online learning concept Illustration</a> by <a href="https://iconscout.com/contributors/delesign">Delesign Graphics</a> on <a href="https://iconscout.com">IconScout</a>
+
 -   <a href="https://iconscout.com/illustrations/business-partnership" target="_blank">Business partnership Illustration</a> by <a href="https://iconscout.com/contributors/gioraphics">gioraphics</a> on <a href="https://iconscout.com">IconScout</a>
 
 
