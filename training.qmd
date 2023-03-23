@@ -12,9 +12,19 @@ We have a screening team of five graduate students. While having multiple screen
 
 ### Introduction to systematic reviews and our protocol
 
+Click below to access the second training session.
+
+<br>
+```{=html}
+<div class="container">
+ <a href="https://butames.github.io/dphtraining01" class="button-51" role="button">Training I - Systematic Review Intro</a>
+</div>
+```
+
+&nbsp;
+
 
 ## Training II (March 21, 2023)
-
 
 
 ### Document Screening and other steps
@@ -23,7 +33,11 @@ Click below to access the second training session.
 
 <br>
 
-<a href="https://butames.github.io/dphtraining02" class="button-51" role="button">Training II - Screening</a>
+```{=html}
+<div class="container">
+  <a href="https://butames.github.io/dphtraining02" class="button-51" role="button">Training II - Screening Documents</a>
+</div>
+```
 
 &nbsp;
 
