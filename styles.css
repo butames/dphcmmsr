@@ -76,6 +76,16 @@ ol {
   color:#000;
 }
 
+footer {
+  margin-top: 50px;
+  border-top: 1px solid silver;
+  font-size: 0.35em;
+}
+
+footer ol {
+  padding-left: 75px;
+}
+
 figure {
   float: center;
   text-align: center;
