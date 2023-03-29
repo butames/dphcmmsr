@@ -121,8 +121,19 @@ If you want some additional information on the SysRev Platform for your own work
 
 The objective at this point is to give a first pass of all the references we have gathered to ensure that they have a basic level of information necessary for the systematic review. This systematic review has two important steps before we begin extracting data. The first is Title and Abstract Screening.The objective is to efficiently scan the titles and the abstracts (if available) of the citations and to mark them as Include or Exclude based on the criteria detailed in the protocol. 
 
-<iframe width="100%" height="563" frameborder="0"
-  src="https://observablehq.com/embed/05ce756c1f9ad887?cells=titabs"></iframe>
+```{=html}
+<div id="observablehq-titabs-9175b58d"></div>
+<p style="text-align:center;">Credit: <a href="https://observablehq.com/d/05ce756c1f9ad887">Systematic Review (SR) Screening Flowcharts by Seyram Butame</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/05ce756c1f9ad887.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "titabs") return new Inspector(document.querySelector("#observablehq-titabs-9175b58d"));
+});
+</script>
+```
 
 
 ## Getting Started
@@ -209,12 +220,29 @@ As you are screening Titles/Abstracts, if you have any questions, please feel fr
 
 If after reviewing the title and abstract of a citation, and you remain uncertain, default to **Including** the citation. The second pass at screening (i.e., Full-Text Screening) will help to resolve uncertainties given you will have access to critical context from the full-text.
 
-<br></br>
+<br>
 
 # Full-text Screening
 
+<br>
+
 ## Getting Started
 
-<iframe width="100%" height="691" frameborder="0"
-  src="https://observablehq.com/embed/05ce756c1f9ad887?cells=fulltxt"></iframe>
+
+```{=html}
+<div id="observablehq-fulltxt-9175b58d"></div>
+<p style="text-align:center;">Credit: <a href="https://observablehq.com/d/05ce756c1f9ad887">Systematic Review (SR) Screening Flowcharts by Seyram Butame</a></p>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/05ce756c1f9ad887.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "fulltxt") return new Inspector(document.querySelector("#observablehq-fulltxt-9175b58d"));
+});
+</script>
+```
+
+
+
   
