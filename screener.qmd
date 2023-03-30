@@ -122,7 +122,7 @@ If you want some additional information on the SysRev Platform for your own work
 The objective at this point is to give a first pass of all the references we have gathered to ensure that they have a basic level of information necessary for the systematic review. This systematic review has two important steps before we begin extracting data. The first is Title and Abstract Screening.The objective is to efficiently scan the titles and the abstracts (if available) of the citations and to mark them as Include or Exclude based on the criteria detailed in the protocol. 
 
 ```{=html}
-<div id="observablehq-titabs-9175b58d"></div>
+<div id="observablehq-titabs-9175b58d" align="center"></div>
 <p style="text-align:center;">Credit: <a href="https://observablehq.com/d/05ce756c1f9ad887">Systematic Review (SR) Screening Flowcharts by Seyram Butame</a></p>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
@@ -224,13 +224,15 @@ If after reviewing the title and abstract of a citation, and you remain uncertai
 
 # Full-text Screening
 
+The objective at this point is to take a second pass at the remaining citations/ references. In the first stage all of the citations you marked as Include, have been moved to this project. In reviewing these citations, we review the Titles, Abstracts and the manuscript's full-text to ensure that the reference has a baseline of the information, that matches our study needs. That is it meets the **Inclusion criteria** we outlined in our protocol.
+
+Often, a review of just the title or the abstract may miss some information. Both the title and abstracts focus on engagement, and highlight what an author thinks of as important. Consequently, they may not show all the desired information. Reviewing the full-text then ensures that additional context is not lost in trying to sift through the search results. As with the first part, our goal is to quickly scan the available material. You don’t have to read the full-text in detail, the goal is to scan relevant sections of the manuscript to ensure that it has the required key elements we need for our systematic review.
+
 <br>
 
-## Getting Started
-
-
 ```{=html}
-<div id="observablehq-fulltxt-9175b58d"></div>
+
+<div id="observablehq-fulltxt-9175b58d" align="center"></div>
 <p style="text-align:center;">Credit: <a href="https://observablehq.com/d/05ce756c1f9ad887">Systematic Review (SR) Screening Flowcharts by Seyram Butame</a></p>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
@@ -241,7 +243,17 @@ new Runtime().module(define, name => {
   if (name === "fulltxt") return new Inspector(document.querySelector("#observablehq-fulltxt-9175b58d"));
 });
 </script>
+
 ```
+
+## Getting Started
+
+As with the Title/Abstract screening we follow similar steps
+
+1.    Log-in to your account
+2.    For now you will see two projects Stage2-FullTextScreening.
+3.    Click on the project to access the landing page.
+4.    To begin full text screening, click on the **Review page**.![](images/sysrev_reviewbutt.png?display=inline-block)
 
 
 
