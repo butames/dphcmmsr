@@ -256,5 +256,13 @@ As with the Title/Abstract screening we follow similar steps
 4.    To begin full text screening, click on the **Review page**.![](images/sysrev_reviewbutt.png?display=inline-block)
 
 
+The SysRev Platform when used for full-text screening is nearly identical to the project for Title/abstract screening. The major difference is as follows:
+
+
+
+
+
+
+
 
   
