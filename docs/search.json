@@ -123,7 +123,7 @@
     "href": "screener.html#getting-started-1",
     "title": "A Guide to Screening Citations and Documents",
     "section": "Getting Started",
-    "text": "Getting Started\nAs with the Title/Abstract screening we follow similar steps\n\nLog-in to your account\nFor now you will see two projects Stage2-FullTextScreening.\nClick on the project to access the landing page.\nTo begin full text screening, click on the Review PAGEtab."
+    "text": "Getting Started\nAs with the Title/Abstract screening we follow similar steps\n\nLog-in to your account\nFor now you will see two projects Stage2-FullTextScreening.\nClick on the project to access the landing page.\nTo begin full text screening, click on the Review page.\n\nThe SysRev Platform when used for full-text screening is nearly identical to the project for Title/abstract screening. The major difference is as follows:"
   },
   {
     "objectID": "appendices.html",
@@ -208,5 +208,19 @@
     "title": "DPH Systematic Review",
     "section": "Contact Information",
     "text": "Contact Information\n\nEmail:sbutame@ph.lacounty.gov"
+  },
+  {
+    "objectID": "data/kappa/kappa.html",
+    "href": "data/kappa/kappa.html",
+    "title": "Calculating Agreement",
+    "section": "",
+    "text": "This document details the calculation of the interater reliability of the screeners in the systematic review project. The kappa-statistic is a measure of the IRR or level of agreement.\nI am passing this calculation through stata (so that the rest of the team can follow, however data manipulation is in R)"
+  },
+  {
+    "objectID": "data/kappa/kappa.html#read-in-data",
+    "href": "data/kappa/kappa.html#read-in-data",
+    "title": "Calculating Agreement",
+    "section": "Read In Data",
+    "text": "Read In Data\nThe data comes from the SysRev Platform. The Platform provides a concordance measurement. However, the Cochrane Handbook recommends providing a “kappa-statistic” as a measurement of the agreement. The data below is taken from the platform, wherein we can see whether each of the screeners decided to include/exclude the reference. Before calculating the kappa-statistic, I need to transform the data a bit:\n\nTo hide the identities of the screeners\nTo present the data in a format that can be used in the calucation (I beleive that is long to wide format)\n\n\nt1 <- read_csv(\"kappa_draftv2.csv\") %>%\n  as_tibble() %>%\n  mutate(rater=replace(rater, rater==\"saweber\", \"rater1\")) %>%\n  mutate(rater=replace(rater, rater==\"lalarios\", \"rater2\")) %>%\n  mutate(rater=replace(rater, rater==\"devinl\", \"rater3\")) %>%\n  mutate(include=replace(include, include==\"FALSE\", 0)) %>%\n  mutate(include=replace(include, include==\"TRUE\", 1))%>%\n  pivot_wider(names_from = rater, values_from = include) %>%\n  arrange(article_id, rater1, rater2, rater3)\n\nt1 <- write_csv(t1, \"irr_data.csv\")"
   }
 ]
