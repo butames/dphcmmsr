@@ -11,7 +11,13 @@ import delimited "/Users/seyramb/Documents/GitHub/dphcmmsr/data/kappa/irr_data.c
 describe
 
 
-** Each of the 22 citations/references is rated into two categories (i.e., Include or Exclude) by five raters. We are using a Fleiss Kappa statistic in this situation.
+/** Each of the 22 citations/references is rated into two categories (i.e., Include or Exclude) by five raters. The calculate kappa-statistic is called the Fleiss Kappa. Per the work of:
+
+Fleiss JL, Levin B, Paik MC. The Measurement of Interrater Agreement. 1st ed. Statistical Methods for Rates and Proportions. 1st ed. New York, NY: Wiley; 2003. pp. 589–626. doi:10.1002/0471445428
+
+Note that there are two calculations based 
+*/
 
 
-kap rater1-rater3
+
+kap rater1, rater2, rater3

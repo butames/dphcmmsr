@@ -10,6 +10,24 @@ I am passing this calculation through stata (so that the rest of the team can fo
 ```{r, warning=FALSE, message=FALSE}
 library(tidyverse)
 library(RStata) ## For running STATA through R
+library(irr) ## Package used in R for calculating interrater reliability for more than two raters.
+```
+
+
+## Generating Citations
+
+To test for the kappa-statistic, we create a project in SysRev Platform, that contains about 10 percent of the citations in our corpus. The code below, extracts a random selection of references. The selection was derived using the RANDOM.org, the random selection was subset. We then select the dois which we import into the SysRev platfom.
+
+```{r, warning=FALSE, message=FALSE}
+
+a1 <- read_csv("/Users/seyramb/Documents/GitHub/dphcmmsr/data/citations/2023citations.csv") %>%
+  as_tibble()%>%
+  filter(article_id %in% c(116,182,58,32,30,131,107,122,100,92,102,144,68,153,162,66,138,179,152,172,107,189)) %>%
+  mutate(doi = sub(".*doi:", "", citation)) %>%
+  select(article_id, doi)
+
+a1 <- write_csv(a1, "sysrevkappa_test02.csv")
+
 ```
 
 ## Read In Data
@@ -21,27 +39,30 @@ The data comes from the SysRev Platform. The Platform provides a concordance mea
 
 ```{r, data, message=FALSE, warning=FALSE}
 
-t1 <- read_csv("kappa_draftv2.csv") %>%
+t1 <- read_csv("kappa_draftv3.csv") %>%
   as_tibble() %>%
   mutate(rater=replace(rater, rater=="saweber", "rater1")) %>%
-  mutate(rater=replace(rater, rater=="lalarios", "rater2")) %>%
-  mutate(rater=replace(rater, rater=="devinl", "rater3")) %>%
+  mutate(rater=replace(rater, rater=="devinl", "rater2")) %>%
+  mutate(rater=replace(rater, rater=="cantres", "rater3")) %>%
+  mutate(rater=replace(rater, rater=="lalarios", "rater4")) %>%
   mutate(include=replace(include, include=="FALSE", 0)) %>%
   mutate(include=replace(include, include=="TRUE", 1))%>%
-  pivot_wider(names_from = rater, values_from = include) %>%
-  arrange(article_id, rater1, rater2, rater3)
+  pivot_wider(names_from = rater, values_from = include)
 
 t1 <- write_csv(t1, "irr_data.csv")
 
 ```
 
-```{r, stata, warning=FALSE, message=FALSE}
+```{r, warning=FALSE, message=FALSE}
 
-options("RStata.StataPath" = "/Applications/Stata/StataBE")
-options("RStata.StataVersion" = 17)
+## Light's Kappa works for instances with more than two raters.
 
+kappam.light(t1[, 2:5])
 
 ```
+
+
+
 
 
 
