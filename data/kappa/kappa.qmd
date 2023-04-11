@@ -16,7 +16,7 @@ library(irr) ## Package used in R for calculating interrater reliability for mor
 
 ## Generating Citations
 
-To test for the kappa-statistic, we create a project in SysRev Platform, that contains about 10 percent of the citations in our corpus. The code below, extracts a random selection of references. The selection was derived using the RANDOM.org, the random selection was subset. We then select the dois which we import into the SysRev platfom.
+To test for the kappa statistic, we create a project in SysRev Platform that contains about 10 percent of the citations in our corpus. The code below extracts a random selection of references. The selection was derived using RANDOM.org, and the random selection was subset. We then select the DOIs, which we import into the SysRev platform.
 
 ```{r, warning=FALSE, message=FALSE}
 
@@ -32,19 +32,22 @@ a1 <- write_csv(a1, "sysrevkappa_test02.csv")
 
 ## Read In Data
 
-The data comes from the SysRev Platform. The Platform provides a concordance measurement. However, the Cochrane Handbook recommends providing a "kappa-statistic" as a measurement of the agreement. The data below is taken from the platform, wherein we can see whether each of the screeners decided to include/exclude the reference. Before calculating the kappa-statistic, I need to transform the data a bit:
+The data comes from the SysRev Platform. The Platform provides a concordance measurement. However, the Cochrane Handbook recommends providing a "kappa statistic" as a measurement of the agreement between screeners. The data below is taken from the platform, wherein we can see whether each of the screeners decided to include or exclude the reference. Before calculating the kappa statistic, I need to transform the data a bit:
 
-1. To hide the identities of the screeners
-2. To present the data in a format that can be used in the calucation (I beleive that is long to wide format)
+1.    To hide the identities of the screeners.
+2.    To present the data in a format that can be used in the calculation (I believe that is long to wide format)
 
 ```{r, data, message=FALSE, warning=FALSE}
 
-t1 <- read_csv("kappa_draftv3.csv") %>%
+t1 <- read_csv("kappa_draftv5.csv") %>%
   as_tibble() %>%
+  select(-c("Article Title", "Resolve?", "Exclude", "User Note", "Title", "Journal", "Authors"))%>%
+  select(article_id = `Article ID`, rater = `User Name`, include = Include) %>%
   mutate(rater=replace(rater, rater=="saweber", "rater1")) %>%
   mutate(rater=replace(rater, rater=="devinl", "rater2")) %>%
   mutate(rater=replace(rater, rater=="cantres", "rater3")) %>%
   mutate(rater=replace(rater, rater=="lalarios", "rater4")) %>%
+  mutate(rater=replace(rater, rater=="edpope", "rater5")) %>%
   mutate(include=replace(include, include=="FALSE", 0)) %>%
   mutate(include=replace(include, include=="TRUE", 1))%>%
   pivot_wider(names_from = rater, values_from = include)
@@ -53,11 +56,37 @@ t1 <- write_csv(t1, "irr_data.csv")
 
 ```
 
+<p style="page-break-after: always;">&nbsp;</p>
+
+# Calculating IRR
+There are couple of ways of measuring IRR.
+
+### Light's Kappa
+
+If there are more than 2 raters, then the average of all possible two-raters kappa is known as Light’s kappa (Conger 1980).
+
+Light's kappa is calculated by taking the observed agreement between the two raters and subtracting the expected agreement, which is the agreement that would be expected by chance. The result is then adjusted for the number of categories that the raters are rating.
+
+### Fliess Kappa
+
+The Fleiss kappa is an inter-rater agreement measure that extends the Cohen’s Kappa for evaluating the level of agreement between two or more raters, when the method of assessment is measured on a categorical scale. It expresses the degree to which the observed proportion of agreement among raters exceeds what would be expected if all raters made their ratings completely randomly. It is an extension of the Cohen's Kappa.
+
+Fleiss kappa is calculated in a similar way as Light's kappa, but it takes into account the agreement between all of the raters. The result is then adjusted for the number of categories that the raters are rating and the number of raters.
+
+The Fleiss Kappa can be specially used when participants are rated by different sets of raters. This means that the raters responsible for rating one subject are not assumed to be the same as those responsible for rating another (Fleiss et al., 2003).
+
+Fleiss kappa is more accurate than Light's kappa when there are three or more raters. However, Light's kappa is simpler to calculate and interpret.
+
 ```{r, warning=FALSE, message=FALSE}
 
 ## Light's Kappa works for instances with more than two raters.
 
-kappam.light(t1[, 2:5])
+kappam.light(t1[, 2:6])
+
+## As does the Fliess's Kappa.
+
+kappam.fleiss(t1[, 2:6])
+
 
 ```
 

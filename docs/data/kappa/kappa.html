@@ -225,7 +225,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#read-in-data" id="toc-read-in-data" class="nav-link active" data-scroll-target="#read-in-data">Read In Data</a></li>
+  <li><a href="#generating-citations" id="toc-generating-citations" class="nav-link active" data-scroll-target="#generating-citations">Generating Citations</a></li>
+  <li><a href="#read-in-data" id="toc-read-in-data" class="nav-link" data-scroll-target="#read-in-data">Read In Data</a></li>
+  <li><a href="#calculating-irr" id="toc-calculating-irr" class="nav-link" data-scroll-target="#calculating-irr">Calculating IRR</a>
+  <ul class="collapse">
+  <li><a href="#lights-kappa" id="toc-lights-kappa" class="nav-link" data-scroll-target="#lights-kappa">Light’s Kappa</a></li>
+  <li><a href="#fliess-kappa" id="toc-fliess-kappa" class="nav-link" data-scroll-target="#fliess-kappa">Fliess Kappa</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -259,30 +265,94 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>I am passing this calculation through stata (so that the rest of the team can follow, however data manipulation is in <code>R</code>)</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RStata) <span class="do">## For running STATA through R</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RStata) <span class="do">## For running STATA through R</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(irr) <span class="do">## Package used in R for calculating interrater reliability for more than two raters.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<section id="generating-citations" class="level2">
+<h2 class="anchored" data-anchor-id="generating-citations">Generating Citations</h2>
+<p>To test for the kappa statistic, we create a project in SysRev Platform that contains about 10 percent of the citations in our corpus. The code below extracts a random selection of references. The selection was derived using RANDOM.org, and the random selection was subset. We then select the DOIs, which we import into the SysRev platform.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>a1 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"/Users/seyramb/Documents/GitHub/dphcmmsr/data/citations/2023citations.csv"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>()<span class="sc">%&gt;%</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(article_id <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">116</span>,<span class="dv">182</span>,<span class="dv">58</span>,<span class="dv">32</span>,<span class="dv">30</span>,<span class="dv">131</span>,<span class="dv">107</span>,<span class="dv">122</span>,<span class="dv">100</span>,<span class="dv">92</span>,<span class="dv">102</span>,<span class="dv">144</span>,<span class="dv">68</span>,<span class="dv">153</span>,<span class="dv">162</span>,<span class="dv">66</span>,<span class="dv">138</span>,<span class="dv">179</span>,<span class="dv">152</span>,<span class="dv">172</span>,<span class="dv">107</span>,<span class="dv">189</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">doi =</span> <span class="fu">sub</span>(<span class="st">".*doi:"</span>, <span class="st">""</span>, citation)) <span class="sc">%&gt;%</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(article_id, doi)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>a1 <span class="ot">&lt;-</span> <span class="fu">write_csv</span>(a1, <span class="st">"sysrevkappa_test02.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
 <section id="read-in-data" class="level2">
 <h2 class="anchored" data-anchor-id="read-in-data">Read In Data</h2>
-<p>The data comes from the SysRev Platform. The Platform provides a concordance measurement. However, the Cochrane Handbook recommends providing a “kappa-statistic” as a measurement of the agreement. The data below is taken from the platform, wherein we can see whether each of the screeners decided to include/exclude the reference. Before calculating the kappa-statistic, I need to transform the data a bit:</p>
+<p>The data comes from the SysRev Platform. The Platform provides a concordance measurement. However, the Cochrane Handbook recommends providing a “kappa statistic” as a measurement of the agreement between screeners. The data below is taken from the platform, wherein we can see whether each of the screeners decided to include or exclude the reference. Before calculating the kappa statistic, I need to transform the data a bit:</p>
 <ol type="1">
-<li>To hide the identities of the screeners</li>
-<li>To present the data in a format that can be used in the calucation (I beleive that is long to wide format)</li>
+<li>To hide the identities of the screeners.</li>
+<li>To present the data in a format that can be used in the calculation (I believe that is long to wide format)</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>t1 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"kappa_draftv2.csv"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rater=</span><span class="fu">replace</span>(rater, rater<span class="sc">==</span><span class="st">"saweber"</span>, <span class="st">"rater1"</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rater=</span><span class="fu">replace</span>(rater, rater<span class="sc">==</span><span class="st">"lalarios"</span>, <span class="st">"rater2"</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rater=</span><span class="fu">replace</span>(rater, rater<span class="sc">==</span><span class="st">"devinl"</span>, <span class="st">"rater3"</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">include=</span><span class="fu">replace</span>(include, include<span class="sc">==</span><span class="st">"FALSE"</span>, <span class="dv">0</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">include=</span><span class="fu">replace</span>(include, include<span class="sc">==</span><span class="st">"TRUE"</span>, <span class="dv">1</span>))<span class="sc">%&gt;%</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> rater, <span class="at">values_from =</span> include) <span class="sc">%&gt;%</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(article_id, rater1, rater2, rater3)</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>t1 <span class="ot">&lt;-</span> <span class="fu">write_csv</span>(t1, <span class="st">"irr_data.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>t1 <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"kappa_draftv5.csv"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span><span class="fu">c</span>(<span class="st">"Article Title"</span>, <span class="st">"Resolve?"</span>, <span class="st">"Exclude"</span>, <span class="st">"User Note"</span>, <span class="st">"Title"</span>, <span class="st">"Journal"</span>, <span class="st">"Authors"</span>))<span class="sc">%&gt;%</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="at">article_id =</span> <span class="st">`</span><span class="at">Article ID</span><span class="st">`</span>, <span class="at">rater =</span> <span class="st">`</span><span class="at">User Name</span><span class="st">`</span>, <span class="at">include =</span> Include) <span class="sc">%&gt;%</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rater=</span><span class="fu">replace</span>(rater, rater<span class="sc">==</span><span class="st">"saweber"</span>, <span class="st">"rater1"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rater=</span><span class="fu">replace</span>(rater, rater<span class="sc">==</span><span class="st">"devinl"</span>, <span class="st">"rater2"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rater=</span><span class="fu">replace</span>(rater, rater<span class="sc">==</span><span class="st">"cantres"</span>, <span class="st">"rater3"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rater=</span><span class="fu">replace</span>(rater, rater<span class="sc">==</span><span class="st">"lalarios"</span>, <span class="st">"rater4"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">rater=</span><span class="fu">replace</span>(rater, rater<span class="sc">==</span><span class="st">"edpope"</span>, <span class="st">"rater5"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">include=</span><span class="fu">replace</span>(include, include<span class="sc">==</span><span class="st">"FALSE"</span>, <span class="dv">0</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">include=</span><span class="fu">replace</span>(include, include<span class="sc">==</span><span class="st">"TRUE"</span>, <span class="dv">1</span>))<span class="sc">%&gt;%</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(<span class="at">names_from =</span> rater, <span class="at">values_from =</span> include)</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>t1 <span class="ot">&lt;-</span> <span class="fu">write_csv</span>(t1, <span class="st">"irr_data.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p style="page-break-after: always;">
+&nbsp;
+</p>
+</section>
+<section id="calculating-irr" class="level1">
+<h1>Calculating IRR</h1>
+<p>There are couple of ways of measuring IRR.</p>
+<section id="lights-kappa" class="level3">
+<h3 class="anchored" data-anchor-id="lights-kappa">Light’s Kappa</h3>
+<p>If there are more than 2 raters, then the average of all possible two-raters kappa is known as Light’s kappa (Conger 1980).</p>
+<p>Light’s kappa is calculated by taking the observed agreement between the two raters and subtracting the expected agreement, which is the agreement that would be expected by chance. The result is then adjusted for the number of categories that the raters are rating.</p>
+</section>
+<section id="fliess-kappa" class="level3">
+<h3 class="anchored" data-anchor-id="fliess-kappa">Fliess Kappa</h3>
+<p>The Fleiss kappa is an inter-rater agreement measure that extends the Cohen’s Kappa for evaluating the level of agreement between two or more raters, when the method of assessment is measured on a categorical scale. It expresses the degree to which the observed proportion of agreement among raters exceeds what would be expected if all raters made their ratings completely randomly. It is an extension of the Cohen’s Kappa.</p>
+<p>Fleiss kappa is calculated in a similar way as Light’s kappa, but it takes into account the agreement between all of the raters. The result is then adjusted for the number of categories that the raters are rating and the number of raters.</p>
+<p>The Fleiss Kappa can be specially used when participants are rated by different sets of raters. This means that the raters responsible for rating one subject are not assumed to be the same as those responsible for rating another (Fleiss et al., 2003).</p>
+<p>Fleiss kappa is more accurate than Light’s kappa when there are three or more raters. However, Light’s kappa is simpler to calculate and interpret.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Light's Kappa works for instances with more than two raters.</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">kappam.light</span>(t1[, <span class="dv">2</span><span class="sc">:</span><span class="dv">6</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> Light's Kappa for m Raters
+
+ Subjects = 21 
+   Raters = 5 
+    Kappa = 0.75 
+
+        z = 0.311 
+  p-value = 0.755 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="do">## As does the Fliess's Kappa.</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">kappam.fleiss</span>(t1[, <span class="dv">2</span><span class="sc">:</span><span class="dv">6</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> Fleiss' Kappa for m Raters
+
+ Subjects = 21 
+   Raters = 5 
+    Kappa = 0.747 
+
+        z = 10.8 
+  p-value = 0 </code></pre>
+</div>
 </div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
