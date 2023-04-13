@@ -39,7 +39,22 @@ The data comes from the SysRev Platform. The Platform provides a concordance mea
 
 ```{r, data, message=FALSE, warning=FALSE}
 
-t1 <- read_csv("kappa_draftv5.csv") %>%
+t1 <- read_csv("kappa_draftv3.csv") %>%
+  as_tibble() %>%
+  mutate(rater=replace(rater, rater=="saweber", "rater1")) %>%
+  mutate(rater=replace(rater, rater=="devinl", "rater2")) %>%
+  mutate(rater=replace(rater, rater=="cantres", "rater3")) %>%
+  mutate(rater=replace(rater, rater=="lalarios", "rater4")) %>%
+  mutate(include=replace(include, include=="FALSE", 0)) %>%
+  mutate(include=replace(include, include=="TRUE", 1))%>%
+  pivot_wider(names_from = rater, values_from = include)
+
+t1 <- write_csv(t1, "irr_data1.csv")
+
+
+
+
+t2 <- read_csv("kappa_draftv5.csv") %>%
   as_tibble() %>%
   select(-c("Article Title", "Resolve?", "Exclude", "User Note", "Title", "Journal", "Authors"))%>%
   select(article_id = `Article ID`, rater = `User Name`, include = Include) %>%
@@ -52,7 +67,7 @@ t1 <- read_csv("kappa_draftv5.csv") %>%
   mutate(include=replace(include, include=="TRUE", 1))%>%
   pivot_wider(names_from = rater, values_from = include)
 
-t1 <- write_csv(t1, "irr_data.csv")
+t2 <- write_csv(t2, "irr_data2.csv")
 
 ```
 
@@ -81,11 +96,11 @@ Fleiss kappa is more accurate than Light's kappa when there are three or more ra
 
 ## Light's Kappa works for instances with more than two raters.
 
-kappam.light(t1[, 2:6])
+kappam.light(t2[, 2:6])
 
 ## As does the Fliess's Kappa.
 
-kappam.fleiss(t1[, 2:6])
+kappam.fleiss(t2[, 2:6])
 
 
 ```

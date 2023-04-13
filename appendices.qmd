@@ -191,3 +191,61 @@ write_csv(af2, "data/202303concordance.csv")
 
 ```
 
+## Concordance Established
+
+There was a delay in establishing concordance. We had had to conduct two training sessions to make up for disagreements between the screeners.
+
+### Kappa after training one
+
+After the first training session, the team (a total of four raters) established a **Fleiss' Kappa of 0.35**. Which demonstrates poor agreement. Attempting to move forward given that statistic will create problems. For instance, we may miss critical citations and references for full-text review and for data extraction. See calculations below.
+
+```{r, warning=FALSE, message=FALSE}
+## Library
+
+library(tidyverse)
+library(irr)
+
+## Data
+
+t1 <- read_csv("data/kappa/irr_data1.csv")
+
+## Light's Kappa works for instances with more than two raters.
+
+kappam.light(t1[, 2:5])
+
+## As does the Fliess's Kappa.
+
+kappam.fleiss(t1[, 2:5])
+
+
+```
+
+
+
+### Kappa after training two
+
+After the second training session, the team (a total of five raters) established a **Fleiss' Kappa of 0.75**. This finding demonstrates very good agreement, strong enough to move forward. See calculations below. 
+
+
+```{r, warning=FALSE, message=FALSE}
+
+## Data
+
+t2 <- read_csv("data/kappa/irr_data2.csv")
+
+## Light's Kappa works for instances with more than two raters.
+
+kappam.light(t2[, 2:6])
+
+## As does the Fleiss's Kappa.
+
+kappam.fleiss(t2[, 2:6])
+
+
+```
+
+
+IRR is established on April 11, 2023. The team is then moved onto Title/ Abstract screening within the SysRev platform.
+
+
+
