@@ -6,7 +6,7 @@
 *** DATE MODIFIED: April 04, 2023
 ********************************************************************************
 
-import delimited "/Users/seyramb/Documents/GitHub/dphcmmsr/data/kappa/irr_data.csv", clear
+import delimited "/Users/seyramb/Documents/GitHub/dphcmmsr/data/kappa/irr_data2.csv", clear
 
 describe
 
