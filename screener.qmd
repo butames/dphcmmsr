@@ -220,9 +220,9 @@ As you are screening Titles/Abstracts, if you have any questions, please feel fr
 
 If after reviewing the title and abstract of a citation, and you remain uncertain, default to **Including** the citation. The second pass at screening (i.e., Full-Text Screening) will help to resolve uncertainties given you will have access to critical context from the full-text.
 
-<br>
 
-<br>
+<div class="page-break"></div>
+
 
 # Full-text Screening
 
@@ -325,16 +325,7 @@ Occasionally, studies with many outcomes, some of them with numerous components,
 
 The intervention will be typically described in detail in the **Methods Section** There may even be a subsection, with the heading "Intervention Components" or language in that fashion. Utilize the search function to search for terms such as *intervention*.
 
-Because of the complexity of this type of CMM intervention, try not to worry about the finer details. We will capture that information during data extraction. However, do ensure that the intervention mentions pharmacist involvement, medication review, and an indication of follow-up. I suspect manuscripts will touch on those three at the very least.
+Because of the possible complexity  CMM interventions, try not to worry about the finer details. We will capture that information during data extraction. However, do ensure that the intervention mentions **pharmacist involvement**, **a medication review**, and an indication of **follow-up** from the pharmacists/providers. I suspect manuscripts will touch on those three at the very least.
     
 
 [^1]: I uploaded the documents separately, after searching for them individual. While I was careful, it is possible that I erred. So, quickly checking to make sure that the uploaded pdf document aligns with the title/abstract information can help eliminate a minor error.
-
-
-
-
-
-
-
-
-  
