@@ -222,6 +222,8 @@ If after reviewing the title and abstract of a citation, and you remain uncertai
 
 <br>
 
+<br>
+
 # Full-text Screening
 
 The objective at this point is to take a second pass at the remaining citations/ references. In the first stage all of the citations you marked as Include, have been moved to this project. In reviewing these citations, we review the Titles, Abstracts and the manuscript's full-text to ensure that the reference has a baseline of the information, that matches our study needs. That is it meets the **Inclusion criteria** we outlined in our protocol.
@@ -248,15 +250,78 @@ new Runtime().module(define, name => {
 
 ## Getting Started
 
-As with the Title/Abstract screening we follow similar steps
+As with the Title/Abstract screening we follow similar steps:
 
-1.    Log-in to your account
-2.    For now you will see two projects Stage2-FullTextScreening.
+1.    Log-in to your account and accept project invitation.
+2.    Once the invitation is accepted, you will see a project **CMMSR-FullTextScreening** listed under your projects.
 3.    Click on the project to access the landing page.
 4.    To begin full text screening, click on the **Review page**.![](images/sysrev_reviewbutt.png?display=inline-block)
 
 
-The SysRev Platform when used for full-text screening is nearly identical to the project for Title/abstract screening. The major difference is as follows:
+The SysRev Platform when used for full-text screening is nearly identical to the project for Title/abstract screening. However because a pdf documents has been added to the project there are a few new features.
+
+![Review page with attached pdf](images/sysrev_reviewb.svg){fig-align="center" width=75%}
+
+The main thing you will notice is the ability to toggle between just the text of the abstract and the uploaded pdf document. If you scroll to the bottom, you also have the opportunity to download the article, should you wish to view it in a separate window.
+
+When you toggle to the pdf document, your screen will look like the below.
+
+
+![Review page toggled to pdf document](images/sysrev_reviewc.svg){fig-align="center" width=75%}
+
+There are several options and navigation tools once you toggle to the document. These include:
+-   Panel button to view document pages at left.
+-   Controls button to view added buttons in th
+-   Zoom controls to expand or minimize the document pages
+-   A Pan button to move individual pages.
+-   A select tool to be highlight and select text in the document
+-   A search option to be able to search the text of the document.
+-   Menu button to view other options such as printing, or downloading the document as a pdf.
+
+![PDF document control options](images/sysrev_reviewd.svg){fig-align="center" width=75%}
+
+## Full-text Screening Tips and 
+
+At this stage you are still just screening the materials, so try not to get bogged down reading through the text of the manuscript. Alternatively, try not feel intimidated by the amount of information you are observing. The way to get through this is:
+
+1. Confirm that the document you are looking at, matches the title and abstract information.[^1] That is check items like the title, date of publication and the author list, and quickly scan through the text of the abstract. Firstly this will ensure that the uploaded document matches the earlier information. Secondly, a look through the title and abstract will help ease your workload. There are seven (7) inclusion criteria. A quick glance through the existing information, will ensure that your only looking through the full-text for one or two of the criteria.
+
+2. Quickly scan through the document to make sure it meets all the inclusion criteria. Much or all of the information we need to assess the inclusion criteria will be found in the **Methods Section** of the paper. Fortunately, scientific journals are diligent about labeling sections. So, scroll down to the methods section and confirm the some or all of the inclusion criteria there.
+
+3. Then select your responses as you did with title and abstract screening using the Labels Panel in Sysrev. If you decide to include the systematic review (i.e., **YES**) make sure to select **Not Applicable** under Exclusion. If you decide that we should exclude it from our systematic review (i.e., **NO**) be sure to select your reasons under Exclusion.
+
+
+### Making Screening Easier
+
+1. Start with the easily verifiable criteria, and save the more difficult for last. In particular verify the following for criteria first.
+
+    -   Publication year (i.e., after 2010) -- You can verify this information by looking at the  publication metadata typically found under the author and title information.
+  
+    -   Publication language (i.e., English) -- A quick glance through the text will tell you whether the manuscript was published in English or not.
+  
+    -   Study setting (i.e., United States) -- The first or second paragraph of the Methods section will point out the setting or settings of the study. Typically it will be in the language about where study participants were recruited (e.g. a clinic, hospital, community in a particular city or state). Often this information may have its own section, such as "Study population" or "Participant recruitment". Look out for language like the below:
+    
+      > [we recruited] at 5 outpatient primary care clinics within the **Duke University Health System (DUHS)**
+
+    -   Study type (see protocol for the full list of acceptable study types) -- There will typically be a paragraph (or cluster of sentences), that describe the study design. In some publications, it will be listed under its own section (e.g., **Study Design**). There will be language in there that quickly highlights the study type. For instance, you will see terms like "cluster randomized clinical trial" or "pre-post design". Such phrasing should give you an indication of the study type. 
+
+2. The next criterion to consider is the **Study Population**. We want studies that have a population or a subpopulation that is hypertensive or living with hypertension.  However, in scenarios, a study could be looking at populations with chronic disease broadly or perhaps even cardiovascular disease. Hypertension is often a comorbidity of those two disease groups. Fortunately, the methods section will typically describe the study population 
+
+3. The next criterion to consider are the study outcomes. There are four categories (<a href="https://butames.github.io/dphcmmsr/quicktips.html#study-outcomes">refer to previous material for their definitions</a>). 
+-   Therapeutic Outcomes (e.g., hospitalizations, admission rates, blood pressure measurements)
+-   Saftey Outcomes (e.g., adverse reactions, )
+-   Humanistic Outcomes (e.g., measures on quality of life, such as the quality-adjusted life year (QALY))
+-   Economic Outcomes (e.g., cost-effectiveness, cost-utility, cost-benefit analyses)
+
+The methods section will likely detail the important study outcomes, typically in a subsection with a heading such as, "Study Outcomes". The relevant outcome or outcomes will then be defined in succession with sentences beginning with words such as, "The primary outcome of interest is...". Many studies will also list secondary outcomes, with clear language. 
+Occasionally, studies with many outcomes with numerous components may list that information in table format. Consequently, be on the look out for a table of outcomes referenced in the Methods Section of a manuscript.
+
+4. Finally consider the criterion of intervention. Recall that CMM has four components.
+    -   Pharmacist-led
+    
+
+
+[^1]: I uploaded the documents separately, after searching for them individual. While I was careful, it is possible that I erred. So, quickly checking to make sure that the uploaded pdf document aligns with the title/abstract information can help eliminate a minor error.
 
 
 
