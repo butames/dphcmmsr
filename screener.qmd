@@ -328,4 +328,4 @@ The intervention will be typically described in detail in the **Methods Section*
 Because of the possible complexity  CMM interventions, try not to worry about the finer details. We will capture that information during data extraction. However, do ensure that the intervention mentions **pharmacist involvement**, **a medication review**, and an indication of **follow-up** from the pharmacists/providers. I suspect manuscripts will touch on those three at the very least.
     
 
-[^1]: I uploaded the documents separately, after searching for them individual. While I was careful, it is possible that I erred. So, quickly checking to make sure that the uploaded pdf document aligns with the title/abstract information can help eliminate a minor error.
+[^1]: I uploaded the documents separately, after searching for them individually through databases. While I tried to careful while uploading the manuscripts, I may have erred in a few cases. Consequently, a quick check of uploaded pdf document to make sure it aligns with the title/abstract information can help eliminate a minor errors.
