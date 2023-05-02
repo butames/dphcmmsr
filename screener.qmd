@@ -230,7 +230,7 @@ The objective at this point is to take a second pass at the remaining citations/
 
 Often, a review of just the title or the abstract may miss some information. Both the title and abstracts focus on engagement, and highlight what an author thinks of as important. Consequently, they may not show all the desired information. Reviewing the full-text then ensures that additional context is not lost in trying to sift through the search results. As with the first part, our goal is to quickly scan the available material. You don’t have to read the full-text in detail, the goal is to scan relevant sections of the manuscript to ensure that it has the required key elements we need for our systematic review.
 
-<br>
+
 
 ```{=html}
 
@@ -309,17 +309,24 @@ At this stage you are still just screening the materials, so try not to get bogg
 
 3. The next criterion to consider are the study outcomes. There are four categories (<a href="https://butames.github.io/dphcmmsr/quicktips.html#study-outcomes">refer to previous material for their definitions</a>). 
 -   Therapeutic Outcomes (e.g., hospitalizations, admission rates, blood pressure measurements)
--   Saftey Outcomes (e.g., adverse reactions, )
+-   Safety Outcomes (e.g., adverse reactions, )
 -   Humanistic Outcomes (e.g., measures on quality of life, such as the quality-adjusted life year (QALY))
 -   Economic Outcomes (e.g., cost-effectiveness, cost-utility, cost-benefit analyses)
 
 The methods section will likely detail the important study outcomes, typically in a subsection with a heading such as, "Study Outcomes". The relevant outcome or outcomes will then be defined in succession with sentences beginning with words such as, "The primary outcome of interest is...". Many studies will also list secondary outcomes, with clear language. 
-Occasionally, studies with many outcomes with numerous components may list that information in table format. Consequently, be on the look out for a table of outcomes referenced in the Methods Section of a manuscript.
 
-4. Finally consider the criterion of intervention. Recall that CMM has four components.
-    -   Pharmacist-led
+Occasionally, studies with many outcomes, some of them with numerous components, may list that information in table format. Consequently, be on the look out for a table of outcomes referenced in the **Methods Section** of a manuscript.
+
+4. Finally consider whether the study matches the four components of an idean CMM intervention as defined in the protocol. Recall that CMM as we define it, has four components.
+    -   Pharmacist-led or pharmacist involvement with team of care providers (e.g., physicians, nurses etc.).
+    -   Development of a patient centered care plan.
+    -   Evaluation of clinical status and medication review.
+    -   Appropriate follow-up and evaluation
+
+The intervention will be typically described in detail in the **Methods Section** There may even be a subsection, with the heading "Intervention Components" or language in that fashion. Utilize the search function to search for terms such as *intervention*.
+
+Because of the complexity of this type of CMM intervention, try not to worry about the finer details. We will capture that information during data extraction. However, do ensure that the intervention mentions pharmacist involvement, medication review, and an indication of follow-up. I suspect manuscripts will touch on those three at the very least.
     
-
 
 [^1]: I uploaded the documents separately, after searching for them individual. While I was careful, it is possible that I erred. So, quickly checking to make sure that the uploaded pdf document aligns with the title/abstract information can help eliminate a minor error.
 
